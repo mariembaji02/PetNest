@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 160" width="100%" height="100%">
+  <g transform="translate(10, 10)">
+    <!-- Icon Container / Background Pill -->
+    <rect x="0" y="0" width="100" height="140" rx="36" fill="#C84714" />
+    
+    <!-- Paw Print Elements -->
+    <!-- Main Pad -->
+    <path d="M 50 112 C 32 112 26 95 33 82 C 38 72 62 72 67 82 C 74 95 68 112 50 112 Z" fill="#FFFFFF" />
+    
+    <!-- Toe Pads -->
+    <!-- Outer Left -->
+    <ellipse cx="28" cy="62" rx="7.5" ry="11" fill="#FFFFFF" transform="rotate(-28 28 62)" />
+    <!-- Inner Left -->
+    <ellipse cx="42" cy="46" rx="8" ry="12" fill="#FFFFFF" transform="rotate(-10 42 46)" />
+    <!-- Inner Right -->
+    <ellipse cx="58" cy="46" rx="8" ry="12" fill="#FFFFFF" transform="rotate(10 58 46)" />
+    <!-- Outer Right -->
+    <ellipse cx="72" cy="62" rx="7.5" ry="11" fill="#FFFFFF" transform="rotate(28 72 62)" />
+
+    <!-- Text: PetNest -->
+    <text x="130" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="92" fill="#1C1815" letter-spacing="-2">PetNest</text>
+  </g>
+</svg>
