@@ -1,3 +1,5 @@
+    // header
+    
     function showSideBar() {
         document.getElementById("sidebar").style.display = "flex";
     }
