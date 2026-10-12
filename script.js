@@ -1,6 +1,6 @@
-    function showSideBar() {
-        document.getElementById("sidebar").style.display = "flex";
-    }
-    function hideSidebar() {
-        document.getElementById("sidebar").style.display = "none";
-    }
+function showSideBar() {
+    document.getElementById("sidebar").classList.add("menu-visible");
+}
+function hideSidebar() {
+    document.getElementById("sidebar").classList.remove("menu-visible");
+}
