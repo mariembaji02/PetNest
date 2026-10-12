@@ -3,33 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PetNest - Acceuil</title>
+    <title>PetNest - Accueil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 <body>
-<header class="en-tete">
-    <div class="en-tete-contenu">
-        <a href="index.html">
-            <img src="img/logo.svg" alt="Logo" class="logo-image">
-        </a>
-        <img src="img/menu.svg" alt="Ouvrir le menu"
-            class="menu-ouvrir" onclick="showSideBar()">
-        <nav>
-            <ul class="sidebar-menu" id="sidebar">
-                <li>
-                    <img src="img/x.svg" alt="Fermer le menu"
-                        class="menu-fermer" onclick="hideSidebar()">
-                </li>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="catalogue.html">Boutique</a></li>
-                <li><a href="adoption.html">Adoption</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="rdv.html">Prendre RDV</a></li>
+
+    <main>
+    </main>
+
+    <footer class="pied-de-page">
+      <div class="conteneur">
+        <div class="pied-grille">
+          <div class="pied-colonne">
+            <div class="logo-wrapper">
+              <p class="logo logo-clair">PetNest</p>
+            </div>
+            <p class="pied-description">Produits, adoption responsable et services pour le bien-être de vos animaux.</p>
+            <div class="reseaux-sociaux">
+              <a href="#" aria-label="Instagram" class="social-icon"></a>
+              <a href="#" aria-label="YouTube" class="social-icon"></a>
+              <a href="#" aria-label="Share" class="social-icon"></a>
+            </div>
+          </div>
+
+          <div class="pied-colonne">
+            <h4>Boutique</h4>
+            <ul class="menu-colonne">
+              <li><a href="#">Chiens</a></li>
+              <li><a href="#">Chats</a></li>
+              <li><a href="#">Rongeurs</a></li>
+              <li><a href="#">Oiseaux</a></li>
+              <li><a href="#">Poissons</a></li>
             </ul>
-        </nav>
-    </div>
-</header>
+          </div>
+
+          <div class="pied-colonne">
+            <h4>Aide</h4>
+            <ul class="menu-colonne">
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Livraison</a></li>
+              <li><a href="#">Retours</a></li>
+              <li><a href="#">Conditions générales</a></li>
+            </ul>
+          </div>
+
+          <div class="pied-colonne">
+            <h4>Contact</h4>
+            <ul class="contact-colonne">
+              <li>12 rue des Lilas, Casablanca</li>
+              <li>05 22 00 00 00</li>
+              <li>bonjour@petnest.ma</li>
+              <li>Lun – Sam : 9 h – 19 h</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="pied-bas">
+          <p> 2026 PetNest. Tous droits réservés.</p>
+          <div class="pied-liens-droit">
+            <a href="#">Mentions légales</a> - <a href="#">Confidentialité</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const menuToggle = document.querySelector('.menu-toggle');
+      const menu = document.querySelector('nav[aria-label="Navigation principale"] .menu');
+
+      menuToggle.addEventListener('click', () => {
+        menu.classList.toggle('menu-ouvert');
+      });
+    </script>
 </body>
 </html>
