@@ -7,6 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
+    width: 100%;
 }
 
 
@@ -123,7 +124,6 @@ body {
 }
 
 
-
 ul {
   list-style: none;
 }
@@ -227,9 +227,11 @@ nav[aria-label="Navigation principale"] {
 
 
 .pied-de-page {
+ 
   padding: 64px 0 32px;
   background-color: #161210;
   color: #D1D5DB;
+ 
 }
 
 .pied-grille {
