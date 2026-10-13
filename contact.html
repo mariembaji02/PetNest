@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PetNest - Accueil</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
@@ -38,7 +37,40 @@
         <p>Alimentation, accessoires, hygiène et jouets sélectionnés par notre équipe.</p>
     </div>
 </header>
+<section id="hero">
+  <div class="faq">
+      <p>FAQ</p>
+      <h2>Questions </h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, aliquid?</p>
+      <a href="#Section-Contacts" class="scroll-button">Go to Contact</a>
+  </div>
+<div class="accordion-Wrapper">
+  <button class="accordion">Section 1</button>
+  <div class="panel">
+    <p>Lorem ipsum dolor sit amet.</p>
+  </div>
 
+  <button class="accordion">Section 2</button>
+  <div class="panel">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  </div>
+
+  <button class="accordion">Section 3</button>
+  <div class="panel">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+  </div>
+
+    <button class="accordion">Section 4</button>
+  <div class="panel">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+  </div>
+
+    <button class="accordion">Section 5</button>
+  <div class="panel">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+  </div>
+</div>
+</section>
 <footer class="pied-de-page">
       <div class="conteneur">
         <div class="pied-grille">
@@ -97,4 +129,22 @@
 
 
 </body>
+<script>var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+} </script>
 </html>
