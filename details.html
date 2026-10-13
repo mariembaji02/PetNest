@@ -9,6 +9,7 @@
     <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 </head>
 <body>
 <header class="en-tete">
@@ -39,7 +40,7 @@
     
 </header>
 <main>
-    <section class="Produits-Acheter">
+    <section class="Produits-Acheter" >
                 <div class="images">
                      <div class="big-img">
                       <img src="img/produit6.jfif" alt="Produit d'animal">
@@ -63,18 +64,79 @@
                       <button>Ajouter au panier</button>
                       <div>
                         <!-- les icons de verification en vert -->
-                       <i class="fa-solid fa-check" style="background-color: #0D9488;"></i>
+                       <i class="fa-solid fa-check" style="color: #0D9488;"></i>
                         <p>Livraison offerte dès 49 €</p>
-                         <i class="fa-solid fa-check" style="background-color: #0D9488;"></i>
+                         <i class="fa-solid fa-check" style="color: #0D9488;"></i>
                         <p>Retour gratuit sous 30 jours</p>
-                         <i class="fa-solid fa-check" style="background-color: #0D9488;"></i>
+                         <i class="fa-solid fa-check" style="color: #0D9488;"></i>
                         <p>Conseils personnalisés en boutique</p>
                       </div>
                 </div>
                
     </section>
     <section class="Produits-Avis">
-       
+       <section class="review">
+            <div> 
+              <h2>4,8</h2>
+              <p>
+                <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
+                <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
+                <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
+                <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
+                <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
+                 <br>
+                 Basé sur 124 avis
+              </p>
+            </div>
+            <div>
+              <p>
+                 <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
+                 <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
+                 <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
+                 <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
+                 <i class="fa-sharp fa-solid fa-star" style="color:  rgb(241, 196, 37);"></i>
+
+              </p>
+              <p>
+                Mon chien adore et son pelage est plus brillant. Livraison rapide.
+              </p>
+            </div>
+            <div >
+              <p>
+                 <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
+                 <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
+                 <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
+                 <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
+                 <i class="fa-sharp fa-solid fa-star" style="color: rgb(236, 222, 172);"></i>
+
+              </p>
+              <p>
+                Bonne qualité, grand format pratique. Le sac pourrait être refermable.
+              </p>
+            </div>
+       </section>
+       <section class="review form">
+           <div class="note">
+            <label for="">Votre note*</label>
+                 <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
+                 <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
+                 <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
+                 <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
+                 <i class="fa-sharp fa-solid fa-star" style="color: rgb(236, 222, 172);"></i>
+
+           </div>
+           <div class="titre-avis">
+            <label for="titre">Titre de l'avis*</label>
+            <input type="text" name="titre avis" id="titre" placeholder="Ex. Excellent rapport qualité-prix">
+           </div>
+           <div class="commentaire">
+            <label for="commentaire">Votre commentaire*</label>
+            <textarea name="commentaire" id="commentaire" ></textarea>
+           </div>
+           <div class="btn-avis">
+            <button>Publier mon avis</button>
+           </div>
+       </section>
     </section>
 </main>
 
