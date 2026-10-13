@@ -9,10 +9,8 @@
 
 body {
     font-family: Arial, sans-serif;
-<<<<<<< HEAD
     width: 100%;
-=======
->>>>>>> origin/feature/catalogue
+
 }
 
 
@@ -48,12 +46,13 @@ body {
     position: fixed;
     top: 0;
     right: 0;
-    width: 250px;
-    height: 100vh;
+    width: 100%;
     background-color: white;
-    padding: 20px;
+    text-align: center;
+    /* padding: 20px; */
     list-style: none;
-    z-index: 1000;
+    /* z-index: 1000; */
+    
 }
 
 
@@ -67,11 +66,10 @@ body {
     padding: 15px;
     color: black;
     text-decoration: none;
+   
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/feature/catalogue
+
 
 .menu-fermer {
     width: 25px;
@@ -79,19 +77,15 @@ body {
     cursor: pointer;
 }
 
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/feature/catalogue
+
 .fermer {
     display: flex;
     justify-content: flex-end;
 }
 
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/feature/catalogue
+
 .div {
     background: #FFE4D3;
     display: flex;
@@ -104,19 +98,15 @@ body {
 }
 
 
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/feature/catalogue
+
 @media (min-width: 768px) {
     .menu-ouvrir {
         display: none;
     }
 
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/feature/catalogue
+
     .sidebar-menu {
         display: flex;
         flex-direction: row;
@@ -129,10 +119,8 @@ body {
         box-shadow: none;
     }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/feature/catalogue
+
     .sidebar-menu a {
         padding: 10px;
     }
@@ -151,7 +139,7 @@ body {
     .sidebar-menu.menu-visible {
         display: flex;
     }
-<<<<<<< HEAD
+
 }
 
 
@@ -225,19 +213,16 @@ nav[aria-label="Navigation principale"] {
   display: none;
 }
 
-.menu a {
-  font-family: 'Poppins', Arial, sans-serif;
-  font-weight: 500;
-  color: #1F2937;
-  padding-bottom: 4px;
-  border-bottom: 2px solid transparent;
+
+.sidebar-menu li a:hover 
+{
+ 
+  background-color: #FFF4ED;
+  color: #EA580C;
+
 }
 
-.menu a:hover,
-.menu .lien-actif {
-  color: #C2410C;
-  border-bottom-color: #C2410C;
-}
+
 
 .menu-toggle {
   display: none;
@@ -335,6 +320,8 @@ nav[aria-label="Navigation principale"] {
   color: #9CA3AF;
 }
 
+
+
 .btn-rdv {
   font-family: 'Poppins', Arial, sans-serif;
   font-weight: 500;
@@ -409,6 +396,3 @@ nav[aria-label="Navigation principale"] {
     text-align: center;
   }
 }
-=======
-}
->>>>>>> origin/feature/catalogue
