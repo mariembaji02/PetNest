@@ -1,3 +1,5 @@
+/* header */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +9,10 @@
 
 body {
     font-family: Arial, sans-serif;
+<<<<<<< HEAD
     width: 100%;
+=======
+>>>>>>> origin/feature/catalogue
 }
 
 
@@ -28,12 +33,14 @@ body {
     width: 80px;
 }
 
+
 .menu-ouvrir {
     width: 30px;
     height: 30px;
     cursor: pointer;
     margin-left: auto;
 }
+
 
 .sidebar-menu {
     display: none;
@@ -61,6 +68,10 @@ body {
     color: black;
     text-decoration: none;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/feature/catalogue
 
 .menu-fermer {
     width: 25px;
@@ -68,11 +79,19 @@ body {
     cursor: pointer;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/feature/catalogue
 .fermer {
     display: flex;
     justify-content: flex-end;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/feature/catalogue
 .div {
     background: #FFE4D3;
     display: flex;
@@ -85,11 +104,19 @@ body {
 }
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/feature/catalogue
 @media (min-width: 768px) {
     .menu-ouvrir {
         display: none;
     }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/feature/catalogue
     .sidebar-menu {
         display: flex;
         flex-direction: row;
@@ -102,7 +129,10 @@ body {
         box-shadow: none;
     }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/feature/catalogue
     .sidebar-menu a {
         padding: 10px;
     }
@@ -121,6 +151,7 @@ body {
     .sidebar-menu.menu-visible {
         display: flex;
     }
+<<<<<<< HEAD
 }
 
 
@@ -378,3 +409,6 @@ nav[aria-label="Navigation principale"] {
     text-align: center;
   }
 }
+=======
+}
+>>>>>>> origin/feature/catalogue
