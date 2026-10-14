@@ -1,4 +1,7 @@
-/* 1. Mobile First: styles de base /
+
+/* 1. Mobile First: styles de base */
+
+
 /* header */
 
 * {
@@ -8,19 +11,25 @@
    
 }
 
+main{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    width: 100%;
+}
 
 body {
+
     font-family:"Poppins", sans-serif;
     width: 100%;
     
 
 }
 
-main
-{
-  width: 100vw;
-  font-size: 14px;
-}
+
+
+
 .en-tete {
     background-color: white;
     padding: 15px;
@@ -68,7 +77,6 @@ main
     padding: 15px;
     color: black;
     text-decoration: none;
-  
    
 }
 .sidebar-menu a:hover {
@@ -111,8 +119,6 @@ main
         display: none;
     }
   
-
-
     .sidebar-menu {
         display: flex;
         flex-direction: row;
@@ -137,10 +143,11 @@ main
         display: none;
     }
 }
+
 .conteneur {
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 16px auto;
   padding: 0 24px;
 }
 
@@ -199,6 +206,14 @@ nav[aria-label="Navigation principale"] {
  
   background-color: #FFF4ED;
   color: #EA580C;
+}
+
+.sidebar-menu li a:hover 
+{
+ 
+  background-color: #FFF4ED;
+  color: #EA580C;
+
 
 }
 
@@ -216,7 +231,7 @@ nav[aria-label="Navigation principale"] {
   display: block;
   width: 24px;
   height: 2px;
-  margin: 5px 0;
+  margin: auto;
   background-color: #0F1B2D;
   transition: all 0.3s ease;
 }
@@ -508,7 +523,6 @@ section .form div .btn-orange
   transition: 0.4s;
 }
 
-
 .active, .accordion:hover {
   background-color: #ccc;
 }
@@ -521,13 +535,82 @@ section .form div .btn-orange
 }
 
 
+.Section-Info{
+    background-color: #fff4ed;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 12px;
+}
+.conteneur h1{
+  font-size: 32px;
+  font-weight: bold;
+}
+.conteneur p{
+  color: #57534E;
+  margin-bottom: 16px;
+}
+.Button-Info{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap:8px;
+}
+.Button-Info .btn-orange{
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  
+}
+.btn-Adopter{
+  display: flex;
+  justify-content: center;
+  border: 2px solid #C2410C;
+  background-color: white;
+  border-radius: 6px;
+  color: #C2410C;
+  padding: 6px;
+}
+.Img-Info{
+  display: block;
+  margin: auto;
+  border-radius: 6px;
 
 
-
+}
 
 /* / 2. Tablette / */
-@media screen and (min-width: 768px) {
-  .header-actions{
+
+@media (min-width: 768px) {
+    .menu-ouvrir {
+        display: none;
+    }
+  
+
+
+    .sidebar-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: static;
+        width: auto;
+        height: auto;
+        padding: 0;
+        gap: 10px;
+        box-shadow: none;
+    }
+
+
+
+    .sidebar-menu a {
+        padding: 10px;
+       
+    }
+
+
+    .fermer {
+        display: none;
+    }
+     .header-actions{
     display: none;
   }
 
@@ -573,7 +656,52 @@ section .form div .btn-orange
     grid-template-columns:2fr 1fr 1fr 1fr;
     gap: 32px;
   }
+   .Section-Info{
+    grid-template-columns: 1fr 1fr ;
+    
+  }
+  .Img-Info{
+    margin: 32px;
+    max-width: 90%;
+    height: auto;
+  }
 }
+
+
+
+
+
+
+
+
+@media (max-width: 992px) {
+  .pied-grille {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+  
+
+}
+
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -586,4 +714,30 @@ section .form div .btn-orange
     grid-template-columns:2fr 1fr 1fr 1fr;
     gap: 32px;
   }
+
+  .sidebar-menu a:hover
+  {
+    text-decoration: none;
+  }
+
+  .pied-bas {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+   .conteneur h1{
+    font-size: 48px;
+  }
+  .Button-Info{
+    grid-template-columns: 1fr 1fr;
+  }
+  .Img-Info{
+    margin: 32px;
+    max-width: 90%;
+    height: auto;
+  }
 }
+
+
+
+
