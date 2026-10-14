@@ -1,12 +1,21 @@
+/* header */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+main{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+
 }
 
 
@@ -27,6 +36,7 @@ body {
     width: 80px;
 }
 
+
 .menu-ouvrir {
     width: 30px;
     height: 30px;
@@ -34,18 +44,20 @@ body {
     margin-left: auto;
 }
 
+
 .sidebar-menu {
     display: none;
     flex-direction: column;
     position: fixed;
-    top: 0;
+    top: 5%;
     right: 0;
-    width: 250px;
-    height: 100vh;
+    width: 100%;
     background-color: white;
-    padding: 20px;
+    text-align: center;
+    /* padding: 20px; */
     list-style: none;
-    z-index: 1000;
+    /* z-index: 1000; */
+    
 }
 
 
@@ -59,7 +71,16 @@ body {
     padding: 15px;
     color: black;
     text-decoration: none;
+   
+   
 }
+.sidebar-menu a:hover {
+   text-decoration: underline;
+   color: #EA580C;
+   padding: 10px;
+   
+}
+
 
 .menu-fermer {
     width: 25px;
@@ -67,10 +88,14 @@ body {
     cursor: pointer;
 }
 
+
+
 .fermer {
     display: flex;
     justify-content: flex-end;
 }
+
+
 
 .div {
     background: #FFE4D3;
@@ -84,10 +109,14 @@ body {
 }
 
 
+
+
 @media (min-width: 768px) {
     .menu-ouvrir {
         display: none;
     }
+  
+
 
     .sidebar-menu {
         display: flex;
@@ -100,6 +129,7 @@ body {
         gap: 10px;
         box-shadow: none;
     }
+
 
 
     .sidebar-menu a {
@@ -120,24 +150,18 @@ body {
     .sidebar-menu.menu-visible {
         display: flex;
     }
+
 }
 
 
 
-ul {
-  list-style: none;
-}
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
 
 .conteneur {
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 24px;
+  margin: 16px auto;
+  padding: 0 24
 }
 
 
@@ -194,19 +218,16 @@ nav[aria-label="Navigation principale"] {
   display: none;
 }
 
-.menu a {
-  font-family: 'Poppins', Arial, sans-serif;
-  font-weight: 500;
-  color: #1F2937;
-  padding-bottom: 4px;
-  border-bottom: 2px solid transparent;
+
+.sidebar-menu li a:hover 
+{
+ 
+  background-color: #FFF4ED;
+  color: #EA580C;
+
 }
 
-.menu a:hover,
-.menu .lien-actif {
-  color: #C2410C;
-  border-bottom-color: #C2410C;
-}
+
 
 .menu-toggle {
   display: none;
@@ -220,16 +241,18 @@ nav[aria-label="Navigation principale"] {
   display: block;
   width: 24px;
   height: 2px;
-  margin: 5px 0;
+  margin: auto;
   background-color: #0F1B2D;
   transition: all 0.3s ease;
 }
 
 
 .pied-de-page {
+ 
   padding: 64px 0 32px;
   background-color: #161210;
   color: #D1D5DB;
+ 
 }
 
 .pied-grille {
@@ -302,6 +325,8 @@ nav[aria-label="Navigation principale"] {
   color: #9CA3AF;
 }
 
+
+
 .btn-rdv {
   font-family: 'Poppins', Arial, sans-serif;
   font-weight: 500;
@@ -316,11 +341,36 @@ nav[aria-label="Navigation principale"] {
   background-color: #9A3412;
 }
 
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
 @media (max-width: 992px) {
   .pied-grille {
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
   }
+  
 }
 
 
@@ -335,6 +385,12 @@ nav[aria-label="Navigation principale"] {
 
   .header-placeholder {
     display: none;
+  }
+  .sidebar-menu a:hover
+  {
+    text-decoration: none;
+   padding: 10px;
+
   }
 
   nav[aria-label="Navigation principale"] .menu {
@@ -369,10 +425,55 @@ nav[aria-label="Navigation principale"] {
     grid-template-columns: 1fr;
     gap: 32px;
   }
+  .sidebar-menu a:hover
+  {
+    text-decoration: none;
+  }
 
   .pied-bas {
     flex-direction: column;
     gap: 12px;
     text-align: center;
   }
+}
+
+.Section-Info{
+    background-color: #fff4ed;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 8px;
+}
+.conteneur h1{
+  font-size: 32px;
+  font-weight: bold;
+}
+.conteneur p{
+  color: #57534E;
+}
+.Button-Info{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap:6px;
+}
+.btn-orange{
+  display: flex;
+  justify-content: center;
+  border: 2px solid #C2410C;
+  background-color: #C2410C;
+  border-radius: 6px;
+  color: white;
+  padding: 6px;
+}
+.btn-Adopter{
+  display: flex;
+  justify-content: center;
+  border: 2px solid #C2410C;
+  background-color: white;
+  border-radius: 6px;
+  color: #C2410C;
+  padding: 6px;
+}
+.Img-Info{
+  margin-top: 6px;
+  border-radius: 6px;
 }
