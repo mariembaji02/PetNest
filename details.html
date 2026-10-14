@@ -1,15 +1,12 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>PetNest - Details</title>
-
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+    <title>PetNest - Detail Produit</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 </head>
 <body>
 <header class="en-tete">
@@ -35,17 +32,16 @@
                 <li><a href="rdv.html">Prendre RDV</a></li>
             </ul>
         </nav>
-
+        
     </div>
-    
 </header>
-<main>
-    <section class="Produits-Acheter" >
+<main> 
+  <section class="Produits-Acheter" >
                 <div class="images">
-                     <div class="big-img">
+                     <div class="big-img" style="justify-items: center;">
                       <img src="img/produit6.jfif" alt="Produit d'animal">
                      </div>
-                     <div class="imgs">
+                     <div class="imgs" >
                           <img src="img/produit1.jfif" alt="Produit d'animal">
                           <img src="img/produit2.jfif" alt="Produit d'animal">
                           <img src="img/produit3.jfif" alt="Produit d'animal">
@@ -75,40 +71,49 @@
                
     </section>
     <section class="Produits-Avis">
-       <section class="review">
-            <div> 
-              <h2>4,8</h2>
-              <p>
+
+      <div  style="border-bottom: 1px solid rgb(229, 226, 226);height: 29px;">
+         <span style="color:#F97316;border-bottom: 2px solid;padding: 5px;margin-left: 15px;"> Avis(124)</span>
+      </div>
+      <section class="review" >
+            <div class="para-etoile" style="display: flex;gap: 20px; "> 
+              
+              <div class="number"  style="line-height: 20px;">4,8</div>
+              <!-- <p class="small"> TTC · soit 4,99 € / kg</p> -->
+                <div style="margin-top: 7px;">
+                 <div class="etoile-icon">
                 <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
                 <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
                 <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
                 <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
                 <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
-                 <br>
-                 Basé sur 124 avis
-              </p>
+               
+                 </div>
+                  <p class="small"> Basé sur 124 avis</p>
+              
+                </div>
             </div>
-            <div>
-              <p>
+            <div class="para-etoile  part-avis">
+              <p class="etoile-icon">
                  <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
                  <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
                  <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
                  <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
                  <i class="fa-sharp fa-solid fa-star" style="color:  rgb(241, 196, 37);"></i>
-
+                  <span class="small"> Sara B. · 12 octobre 2026</span> 
               </p>
               <p>
                 Mon chien adore et son pelage est plus brillant. Livraison rapide.
               </p>
             </div>
-            <div >
-              <p>
+            <div class="para-etoile part-avis">
+              <p  class="etoile-icon">
                  <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
                  <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
                  <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
                  <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
                  <i class="fa-sharp fa-solid fa-star" style="color: rgb(236, 222, 172);"></i>
-
+                   <span class="small"> Youssef A. · 3 octobre 2026</span>
               </p>
               <p>
                 Bonne qualité, grand format pratique. Le sac pourrait être refermable.
@@ -116,8 +121,14 @@
             </div>
        </section>
        <section class="review form">
-           <div class="note">
+          <div>
+            <h2> Laisser un avis</h2>
+          </div>
+           <div>
             <label for="">Votre note*</label>
+           </div>
+           <div class="note">
+            
                  <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
                  <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
                  <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
@@ -125,21 +136,28 @@
                  <i class="fa-sharp fa-solid fa-star" style="color: rgb(236, 222, 172);"></i>
 
            </div>
-           <div class="titre-avis">
+           <div>
             <label for="titre">Titre de l'avis*</label>
-            <input type="text" name="titre avis" id="titre" placeholder="Ex. Excellent rapport qualité-prix">
+           </div>
+           <div class="titre-avis">
+            
+            <input type="text" name="titre avis" id="titre" placeholder="   Ex. Excellent rapport qualité-prix">
+           </div>
+           <div>
+             <label for="commentaire">Votre commentaire*</label>
            </div>
            <div class="commentaire">
-            <label for="commentaire">Votre commentaire*</label>
+           
             <textarea name="commentaire" id="commentaire" ></textarea>
            </div>
            <div class="btn-avis">
-            <button>Publier mon avis</button>
+            <button class="btn-orange">Publier mon avis</button>
            </div>
        </section>
     </section>
-</main>
 
+  
+</main>
 <footer class="pied-de-page">
       <div class="conteneur">
         <div class="pied-grille">
