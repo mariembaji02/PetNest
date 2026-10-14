@@ -441,7 +441,7 @@ nav[aria-label="Navigation principale"] {
     background-color: #fff4ed;
     display: grid;
     grid-template-columns: 1fr;
-    padding: 8px;
+    padding: 12px;
 }
 .conteneur h1{
   font-size: 32px;
@@ -449,11 +449,12 @@ nav[aria-label="Navigation principale"] {
 }
 .conteneur p{
   color: #57534E;
+  margin-bottom: 16px;
 }
 .Button-Info{
   display: grid;
   grid-template-columns: 1fr;
-  gap:6px;
+  gap:8px;
 }
 .btn-orange{
   display: flex;
@@ -474,6 +475,32 @@ nav[aria-label="Navigation principale"] {
   padding: 6px;
 }
 .Img-Info{
-  margin-top: 6px;
+  display: block;
+  margin: auto;
   border-radius: 6px;
+}
+
+@media(min-width:768px){
+  .Section-Info{
+    grid-template-columns: 1fr 1fr ;
+  }
+  .Img-Info{
+    margin: 32px;
+    max-width: 90%;
+    height: auto;
+  }
+}
+
+@media(min-width:1024px){
+  .conteneur h1{
+    font-size: 48px;
+  }
+  .Button-Info{
+    grid-template-columns: 1fr 1fr;
+  }
+  .Img-Info{
+    margin: 32px;
+    max-width: 90%;
+    height: auto;
+  }
 }
