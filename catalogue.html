@@ -1,43 +1,213 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PetNest - Catalogue</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PetNest - Boutique</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
-</head>
-<body>
-<header class="en-tete">
-    <div class="en-tete-contenu">
+  </head>
+  <body>
+    <header class="en-tete">
+      <div class="en-tete-contenu">
         <a href="index.html">
-            <img src="img/logo.svg" alt="Logo" class="logo-image">
+          <img src="img/logo.svg" alt="Logo" class="logo-image" />
         </a>
-        <img src="img/menu.svg" alt="Ouvrir le menu"
-             class="menu-ouvrir md:hidden"
-             onclick="showSideBar()">
+        <img
+          src="img/menu.svg"
+          alt="Ouvrir le menu"
+          class="menu-ouvrir md:hidden"
+          onclick="showSideBar()"
+        />
         <nav>
-            <ul class="sidebar-menu" id="sidebar">
-                <li class="fermer md:hidden">
-                    <img src="img/x.svg" alt="Fermer le menu"
-                         class="menu-fermer"
-                         onclick="hideSidebar()">
-                </li>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="catalogue.html">Boutique</a></li>
-                <li><a href="adoption.html">Adoption</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="rdv.html">Prendre RDV</a></li>
-            </ul>
+          <ul class="sidebar-menu" id="sidebar">
+            <li class="fermer md:hidden">
+              <img
+                src="img/x.svg"
+                alt="Fermer le menu"
+                class="menu-fermer"
+                onclick="hideSidebar()"
+              />
+            </li>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="catalogue.html">Boutique</a></li>
+            <li><a href="adoption.html">Adoption</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+              <a
+                href="rdv.html"
+                style="
+                  background-color: #ea580c;
+                  color: white;
+                  border-radius: 1rem;
+                "
+                >Prendre RDV</a
+              >
+            </li>
+          </ul>
         </nav>
-
-    </div>
-    <div class="div">
+      </div>
+    </header>
+    <main>
+      <section class="Section-Banner">
         <h1>Boutique - Chiens</h1>
-        <p>Alimentation, accessoires, hygiène et jouets sélectionnés par notre équipe.</p>
-    </div>
-</header>
-</body>
-</html> 
+        <p>
+          Alimentation, accessoires, hygiène et jouets sélectionnés par notre
+          équipe.
+        </p>
+      </section>
+      <section class="Section-Shop">
+        <div class="filters">
+          <div class="filterbuttons">
+            <button class="filterall">Touts</button>
+            <button class="filter">Chiens</button>
+            <button class="filter">Chats</button>
+            <button class="filter">Rongeurs</button>
+            <button class="filter">Oiseaux</button>
+            <button class="filter">Poissons</button>
+          </div>
+        </div>
+
+        <div class="Shop">
+          <div class="Affichage" style="grid-area: affichage">
+            <h3>Trier par</h3>
+            <select>
+              <option>Prix croissant</option>
+              <option>Prix décroissant</option>
+            </select>
+          </div>
+          <div class="item" style="grid-area: item-1">
+            <img
+              class="Img-item"
+              src="img/produit2.jfif"
+              alt="Photo de l'animal"
+            />
+            <p class="Name">Croquettes saumon & riz</p>
+            <h3 class="Price">49,90 €</h3>
+            <button class="Ajouter">Ajouter</button>
+          </div>
+          <div class="item" style="grid-area: item-2">
+            <img
+              class="Img-item"
+              src="img/produit3.jfif"
+              alt="Photo de l'animal"
+            />
+            <p class="Name">Os à macher naturels x3</p>
+            <h3 class="Price">8,90 €</h3>
+            <button class="Ajouter">Ajouter</button>
+          </div>
+          <div class="item" style="grid-area: item-3">
+            <img
+              class="Img-item"
+              src="img/harnais.jpg"
+              alt="Photo de l'animal"
+            />
+            <p class="Name">Harnais réglable taille M</p>
+            <h3 class="Price">21,15 €</h3>
+            <button class="Ajouter">Ajouter</button>
+          </div>
+          <div class="item" style="grid-area: item-4">
+            <img
+              class="Img-item"
+              src="img/panier.jpg"
+              alt="Photo de l'animal"
+            />
+            <p class="Name">Panier déhoussable 80 cm</p>
+            <h3 class="Price">59,00 €</h3>
+            <button class="Ajouter">Ajouter</button>
+          </div>
+          <div class="item" style="grid-area: item-5">
+            <img
+              class="Img-item"
+              src="img/produit6.jfif"
+              alt="Photo de l'animal"
+            />
+            <p class="Name">Shampooing peaux</p>
+            <h3 class="Price">12,50 €</h3>
+            <button class="Ajouter">Ajouter</button>
+          </div>
+          <div class="item" style="grid-area: item-6">
+            <img
+              class="Img-item"
+              src="img/balles.jpg"
+              alt="Photo de l'animal"
+            />
+            <p class="Name">Balles lumineuses x2</p>
+            <h3 class="Price">71,20 €</h3>
+            <button class="Ajouter">Ajouter</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="Pages">
+        <div class="Page">&lt;</div>
+        <div class="Page-main">1</div>
+        <div class="Page">2</div>
+        <div class="Page">3</div>
+        <div class="Page">&gt;</div>
+      </section>
+    </main>
+    <footer class="pied-de-page">
+      <div class="conteneur">
+        <div class="pied-grille">
+          <div class="pied-colonne">
+            <div class="logo-wrapper">
+              <p class="logo logo-clair">PetNest</p>
+            </div>
+            <p class="pied-description">
+              Produits, adoption responsable et services pour le bien-être de
+              vos animaux.
+            </p>
+            <div class="reseaux-sociaux">
+              <a href="#" aria-label="Instagram" class="social-icon"></a>
+              <a href="#" aria-label="YouTube" class="social-icon"></a>
+              <a href="#" aria-label="Share" class="social-icon"></a>
+            </div>
+          </div>
+
+          <div class="pied-colonne">
+            <h4>Boutique</h4>
+            <ul class="menu-colonne">
+              <li><a href="#">Chiens</a></li>
+              <li><a href="#">Chats</a></li>
+              <li><a href="#">Rongeurs</a></li>
+              <li><a href="#">Oiseaux</a></li>
+              <li><a href="#">Poissons</a></li>
+            </ul>
+          </div>
+
+          <div class="pied-colonne">
+            <h4>Aide</h4>
+            <ul class="menu-colonne">
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Livraison</a></li>
+              <li><a href="#">Retours</a></li>
+              <li><a href="#">Conditions générales</a></li>
+            </ul>
+          </div>
+
+          <div class="pied-colonne">
+            <h4>Contact</h4>
+            <ul class="contact-colonne">
+              <li>12 rue des Lilas, Casablanca</li>
+              <li>05 22 00 00 00</li>
+              <li>bonjour@petnest.ma</li>
+              <li>Lun – Sam : 9 h – 19 h</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="pied-bas">
+          <p>2026 PetNest. Tous droits réservés.</p>
+          <div class="pied-liens-droit">
+            <a href="#">Mentions légales</a> - <a href="#">Confidentialité</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
