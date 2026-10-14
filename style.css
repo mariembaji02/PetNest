@@ -5,11 +5,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
 }
 
 
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:"Poppins", sans-serif;
     width: 100%;
     
 
@@ -18,18 +19,13 @@ body {
 main
 {
   width: 100vw;
+  font-size: 14px;
 }
 .en-tete {
     background-color: white;
     padding: 15px;
 }
 
-
-.en-tete-contenu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 
 .logo-image {
@@ -49,6 +45,7 @@ main
     display: none;
     flex-direction: column;
     position: fixed;
+    width: 100%;
     top: 5%;
     right: 0;
     width: 100%;
@@ -71,7 +68,7 @@ main
     padding: 15px;
     color: black;
     text-decoration: none;
-   
+  
    
 }
 .sidebar-menu a:hover {
@@ -108,105 +105,6 @@ main
     min-height: 25vh;
 }
 
-/* Partie Detail Produis */
-section 
-{
-  /* background-color: rgb(208, 16, 48); */
-  width: 100%;
-}
-.Produits-Acheter
-{
-  
-  border-radius: 2%;
- 
-}
-.Produits-Acheter .images
-{
-    
-    width: 90%;
-}
-.images .big-img
-{
-  padding-top: 10%;
-  width:100%;
-  text-align: center;
-}
-
-.images .big-img img
-{
-  width:90%;
-  height: 300px;
-  border-radius: 7%;
-  
-
-}
-.Produits-Acheter .imgs{
-
-  width: 100%;
-  display: flex;
-  gap: 2%;
-  padding: 2%;
-}
-.Produits-Acheter .imgs img
-{
-  width: 100px;
-  height: 100px;
-  border-radius: 9%;
-}
-.images img
-{
-  border: 2px solid #C2410C;
-}
-.produit-Info
-{
-  /* background-color: #C2410C; */
-  
-  padding: 5%;
-  width: 100%;
-  font-size: 18px;
-}
-.produit-Info p
-{
-  /* background-color: #444; */
-  margin: 3%;
-}
-
-.produit-Info .small
-{
-  font-size: 15px;
-  color: #A8A29E;
-}
-.produit-Info .number
-{
-  font-weight: bolder;
-  font-size: 25px;
-  color: black;
-  
-}
-
-.produit-Info button
-{
-  height: 35px;
-  border-radius: 5px;
-  margin-left: 5%;
-  font-size: 17px;
-  padding: 3px;
-}
-.produit-Info .btn-normal
-{
-  width: 30%;
-  border: 1px solid black;
-  
- 
-}
-.produit-Info .btn-orange
-{
-  width: 50%;
-  border: 1px solid #C2410C;
-  background-color: #C2410C;
-  color: white;
- 
-}
 
 @media (min-width: 768px) {
     .menu-ouvrir {
@@ -231,6 +129,7 @@ section
 
     .sidebar-menu a {
         padding: 10px;
+       
     }
 
 
@@ -238,22 +137,6 @@ section
         display: none;
     }
 }
-
-
-/* @media (max-width: 767px) {
-    .sidebar-menu {
-        display: none;
-    }
-    .sidebar-menu.menu-visible {
-        display: flex;
-    }
-
-} */
-
-
-
-
-
 .conteneur {
   width: 100%;
   max-width: 1200px;
@@ -262,19 +145,12 @@ section
 }
 
 
-.en-tete {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  background-color: #FFFFFF;
-  border-bottom: 1px solid #E5E7EB;
-}
-
 .en-tete-contenu {
   height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+ 
 }
 
 .logo-wrapper {
@@ -299,6 +175,7 @@ section
 nav[aria-label="Navigation principale"] {
   display: flex;
   justify-content: center;
+ 
 }
 
 .menu {
@@ -314,6 +191,7 @@ nav[aria-label="Navigation principale"] {
 .menu-rdv{
   display: none;
 }
+ 
 
 
 .sidebar-menu li a:hover 
@@ -343,6 +221,184 @@ nav[aria-label="Navigation principale"] {
   transition: all 0.3s ease;
 }
 
+/* Partie Detail Produis */
+section 
+{
+ 
+  width: 100%;
+}
+
+.Produits-Acheter .images
+{
+    margin: auto;
+    width: 100%;
+}
+.images .big-img
+{
+  padding-top: 10%;
+  width:100%;
+  text-align: center;
+}
+.images .big-img img
+{
+  width:90%;
+  height: 300px;
+  border-radius: 7%;
+  
+
+}
+.Produits-Acheter .imgs{
+
+  width: 100%;
+ 
+  gap: 2%;
+  padding: 2%;
+}
+.imgs
+{
+  /* background-color: #9A3412; */
+  display: flex;
+  /* flex-wrap: wrap; */
+   /* grid-template-columns: repeat(6, 1fr); */
+}
+.imgs img
+{
+  width: 100px;
+  height: 100px;
+  border-radius: 9%;
+}
+
+.images img
+{
+  border: 2px solid #C2410C;
+}
+
+.produit-Info
+{
+  padding: 5%;
+  width: 100%;
+ 
+}
+.produit-Info p
+{
+  
+  margin: 3%;
+}
+ .small
+{
+  font-size: 13px;
+  color: #787371ec;
+ 
+}
+
+.number
+{
+  font-weight: bolder;
+  font-size: 38px;
+  color: black;
+  padding: 10px;
+}
+.produit-Info button
+{
+  height: 35px;
+  border-radius: 5px;
+  margin-left: 5%;
+  padding: 3px;
+}
+.produit-Info .btn-normal
+{
+  width: 30%;
+  border: 1px solid black;
+  
+ 
+}
+ .btn-orange
+{
+  width: 50%;
+  border: 1px solid #C2410C;
+  background-color: #C2410C;
+  color: white;
+  font-weight: 600;
+ 
+}
+.Produits-Avis
+{
+  background-color: #F5F5F4;
+  padding: 3%;
+   
+}
+
+.para-etoile
+{
+  
+   margin: 5px;
+   padding:   3%;
+   border-radius: 5px;
+}
+
+.part-avis
+{
+  background-color: white;
+  padding: 7%;
+  border: 1px solid #d1cbc7;
+  border-radius: 7px;
+}
+.etoile-icon
+{
+ 
+  font-size: 13px;
+}
+.part-avis p
+{
+ background-color:white;
+ margin: 5px;
+
+}
+section .review
+{
+  margin: auto;
+}
+section .form
+{
+  background-color:white ;
+  border: 1px solid #d1cbc7;
+  padding: 4%;
+  width: 97%;
+  border-radius: 7px;
+  
+}
+section .form div
+{
+  
+  margin: 3%;
+  width: 90%;
+  
+}
+section .form div h2
+{
+     
+     font-weight: 500;
+}
+section .form div input,textarea
+{
+  width: 100%;
+  height: 50px;
+  border: 1px solid ;
+  border-radius: 5px;
+}
+section .form div textarea
+{
+    height: 80px;
+}
+section .form div .btn-orange
+{
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+
+/* footer */
 
 .pied-de-page {
  
@@ -399,6 +455,7 @@ nav[aria-label="Navigation principale"] {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  list-style: none;
 }
 
 .menu-colonne a,
@@ -406,6 +463,7 @@ nav[aria-label="Navigation principale"] {
 .pied-liens-droit a {
   font-size: 14px;
   color: #9CA3AF;
+  text-decoration: none;
 }
 
 .menu-colonne a:hover,
@@ -462,32 +520,6 @@ nav[aria-label="Navigation principale"] {
   overflow: hidden;
 }
 
-/* @media (max-width: 992px) {
-  .pied-grille {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
-  }
-  
-} */
-
-
-
-/* @media (max-width: 576px) {
-  .pied-grille {
-    grid-template-columns: 1fr;
-    gap: 32px;
-  }
-  .sidebar-menu a:hover
-  {
-    text-decoration: none;
-  }
-
-  .pied-bas {
-    flex-direction: column;
-    gap: 12px;
-    text-align: center;
-  }
-} */
 
 
 
@@ -542,6 +574,11 @@ nav[aria-label="Navigation principale"] {
     gap: 32px;
   }
 }
+
+
+
+
+
 
 /* / 3. Desktop  */
 @media screen and (min-width: 1024px) {
