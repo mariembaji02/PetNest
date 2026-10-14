@@ -1,7 +1,7 @@
-<<<<<<< HEAD
-/* 1. Mobile First: styles de base /
-=======
->>>>>>> 711a52f (L'ajoute de code CSS du partie information)
+
+/* 1. Mobile First: styles de base */
+
+
 /* header */
 
 * {
@@ -15,25 +15,19 @@ main{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 14px;
+    width: 100%;
 }
 
 body {
-<<<<<<< HEAD
+
     font-family:"Poppins", sans-serif;
     width: 100%;
     
-=======
-    font-family: "Poppins", sans-serif;
-    width: 100%;
->>>>>>> 711a52f (L'ajoute de code CSS du partie information)
 
 }
 
-main
-{
-  width: 100vw;
-  font-size: 14px;
-}
+
 .en-tete {
     background-color: white;
     padding: 15px;
@@ -58,10 +52,6 @@ main
     display: none;
     flex-direction: column;
     position: fixed;
-<<<<<<< HEAD
-    width: 100%;
-=======
->>>>>>> 711a52f (L'ajoute de code CSS du partie information)
     top: 5%;
     right: 0;
     width: 100%;
@@ -84,11 +74,6 @@ main
     padding: 15px;
     color: black;
     text-decoration: none;
-<<<<<<< HEAD
-  
-=======
-   
->>>>>>> 711a52f (L'ajoute de code CSS du partie information)
    
 }
 .sidebar-menu a:hover {
@@ -124,65 +109,11 @@ main
     padding: 30px 15px;
     min-height: 25vh;
 }
-
-
-
-
-@media (min-width: 768px) {
-    .menu-ouvrir {
-        display: none;
-    }
-  
-
-
-    .sidebar-menu {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        position: static;
-        width: auto;
-        height: auto;
-        padding: 0;
-        gap: 10px;
-        box-shadow: none;
-    }
-
-
-
-    .sidebar-menu a {
-        padding: 10px;
-       
-    }
-
-
-    .fermer {
-        display: none;
-    }
-}
-<<<<<<< HEAD
-=======
-
-
-@media (max-width: 767px) {
-    .sidebar-menu {
-        display: none;
-    }
-    .sidebar-menu.menu-visible {
-        display: flex;
-    }
-
-}
-
-
-
-
-
->>>>>>> 711a52f (L'ajoute de code CSS du partie information)
 .conteneur {
   width: 100%;
   max-width: 1200px;
   margin: 16px auto;
-  padding: 0 24
+  padding: 0 24px;
 }
 
 
@@ -240,9 +171,7 @@ nav[aria-label="Navigation principale"] {
  
   background-color: #FFF4ED;
   color: #EA580C;
-
-<<<<<<< HEAD
-=======
+}
 
 .sidebar-menu li a:hover 
 {
@@ -250,7 +179,7 @@ nav[aria-label="Navigation principale"] {
   background-color: #FFF4ED;
   color: #EA580C;
 
->>>>>>> 711a52f (L'ajoute de code CSS du partie information)
+
 }
 
 
@@ -557,10 +486,7 @@ section .form div .btn-orange
   border: none;
   outline: none;
   transition: 0.4s;
-<<<<<<< HEAD
-=======
 }
-
 
 .active, .accordion:hover {
   background-color: #ccc;
@@ -573,35 +499,81 @@ section .form div .btn-orange
   overflow: hidden;
 }
 
-@media (max-width: 992px) {
-  .pied-grille {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
-  }
+.Section-Info{
+    background-color: #fff4ed;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 12px;
+}
+.conteneur h1{
+  font-size: 32px;
+  font-weight: bold;
+}
+.conteneur p{
+  color: #57534E;
+  margin-bottom: 16px;
+}
+.Button-Info{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap:8px;
+}
+.Button-Info .btn-orange{
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
   
->>>>>>> 711a52f (L'ajoute de code CSS du partie information)
 }
-
-
-.active, .accordion:hover {
-  background-color: #ccc;
-}
-
-.panel {
-  padding: 0 18px;
+.btn-Adopter{
+  display: flex;
+  justify-content: center;
+  border: 2px solid #C2410C;
   background-color: white;
-  display: none;
-  overflow: hidden;
+  border-radius: 6px;
+  color: #C2410C;
+  padding: 6px;
 }
+.Img-Info{
+  display: block;
+  margin: auto;
+  border-radius: 6px;
 
-
-
-
-
+}
 
 /* / 2. Tablette / */
-@media screen and (min-width: 768px) {
-  .header-actions{
+
+@media (min-width: 768px) {
+    .menu-ouvrir {
+        display: none;
+    }
+  
+
+
+    .sidebar-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: static;
+        width: auto;
+        height: auto;
+        padding: 0;
+        gap: 10px;
+        box-shadow: none;
+    }
+
+
+
+    .sidebar-menu a {
+        padding: 10px;
+       
+    }
+
+
+    .fermer {
+        display: none;
+    }
+     .header-actions{
     display: none;
   }
 
@@ -647,8 +619,54 @@ section .form div .btn-orange
     grid-template-columns:2fr 1fr 1fr 1fr;
     gap: 32px;
   }
-<<<<<<< HEAD
+   .Section-Info{
+    grid-template-columns: 1fr 1fr ;
+    
+  }
+  .Img-Info{
+    margin: 32px;
+    max-width: 90%;
+    height: auto;
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 992px) {
+  .pied-grille {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+  
+
+}
+
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
 
 
 
@@ -661,7 +679,7 @@ section .form div .btn-orange
     grid-template-columns:2fr 1fr 1fr 1fr;
     gap: 32px;
   }
-=======
+
   .sidebar-menu a:hover
   {
     text-decoration: none;
@@ -672,46 +690,19 @@ section .form div .btn-orange
     gap: 12px;
     text-align: center;
   }
+   .conteneur h1{
+    font-size: 48px;
+  }
+  .Button-Info{
+    grid-template-columns: 1fr 1fr;
+  }
+  .Img-Info{
+    margin: 32px;
+    max-width: 90%;
+    height: auto;
+  }
 }
 
-.Section-Info{
-    background-color: #fff4ed;
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 8px;
-}
-.conteneur h1{
-  font-size: 32px;
-  font-weight: bold;
-}
-.conteneur p{
-  color: #57534E;
-}
-.Button-Info{
-  display: grid;
-  grid-template-columns: 1fr;
-  gap:6px;
-}
-.btn-orange{
-  display: flex;
-  justify-content: center;
-  border: 2px solid #C2410C;
-  background-color: #C2410C;
-  border-radius: 6px;
-  color: white;
-  padding: 6px;
-}
-.btn-Adopter{
-  display: flex;
-  justify-content: center;
-  border: 2px solid #C2410C;
-  background-color: white;
-  border-radius: 6px;
-  color: #C2410C;
-  padding: 6px;
-}
-.Img-Info{
-  margin-top: 6px;
-  border-radius: 6px;
->>>>>>> 711a52f (L'ajoute de code CSS du partie information)
-}
+
+
+
