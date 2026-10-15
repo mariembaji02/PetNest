@@ -2,29 +2,32 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PetNest - Boutique</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <script src="script.js" defer></script>
   </head>
   <body>
     <header class="en-tete">
       <div class="en-tete-contenu">
-        <a href="index.html">
-          <img src="img/logo.svg" alt="Logo" class="logo-image" />
-        </a>
+        <a href="index.html"
+          ><img src="img/logo.svg" alt="Logo PetNest" class="logo-image"
+        /></a>
         <img
           src="img/menu.svg"
           alt="Ouvrir le menu"
-          class="menu-ouvrir md:hidden"
+          class="menu-ouvrir"
           onclick="showSideBar()"
         />
         <nav>
           <ul class="sidebar-menu" id="sidebar">
-            <li class="fermer md:hidden">
+            <li class="fermer">
               <img
                 src="img/x.svg"
                 alt="Fermer le menu"
@@ -33,21 +36,11 @@
               />
             </li>
             <li><a href="index.html">Accueil</a></li>
-            <li><a href="catalogue.html">Boutique</a></li>
+            <li><a href="catalogue.html" class="actif-button">Boutique</a></li>
             <li><a href="adoption.html">Adoption</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li>
-              <a
-                href="rdv.html"
-                style="
-                  background-color: #ea580c;
-                  color: white;
-                  border-radius: 1rem;
-                "
-                >Prendre RDV</a
-              >
-            </li>
+            <li><a href="rdv.html" class="btn-rdv">Prendre RDV</a></li>
           </ul>
         </nav>
       </div>
@@ -63,7 +56,8 @@
       <section class="Section-Shop">
         <div class="filters">
           <div class="filterbuttons">
-            <button class="filterall">Touts</button>
+            <p class="animal">Animal</p>
+            <button class="filterall">Tous</button>
             <button class="filter">Chiens</button>
             <button class="filter">Chats</button>
             <button class="filter">Rongeurs</button>
@@ -71,7 +65,6 @@
             <button class="filter">Poissons</button>
           </div>
         </div>
-
         <div class="Shop">
           <div class="Affichage" style="grid-area: affichage">
             <h3>Trier par</h3>
@@ -84,9 +77,9 @@
             <img
               class="Img-item"
               src="img/produit2.jfif"
-              alt="Photo de l'animal"
+              alt="Croquettes au saumon et au riz"
             />
-            <p class="Name">Croquettes saumon & riz</p>
+            <p class="Name">Croquettes saumon &amp; riz</p>
             <h3 class="Price">49,90 €</h3>
             <button class="Ajouter">Ajouter</button>
           </div>
@@ -94,9 +87,9 @@
             <img
               class="Img-item"
               src="img/produit3.jfif"
-              alt="Photo de l'animal"
+              alt="Os à mâcher naturels"
             />
-            <p class="Name">Os à macher naturels x3</p>
+            <p class="Name">Os à mâcher naturels x3</p>
             <h3 class="Price">8,90 €</h3>
             <button class="Ajouter">Ajouter</button>
           </div>
@@ -104,7 +97,7 @@
             <img
               class="Img-item"
               src="img/harnais.jpg"
-              alt="Photo de l'animal"
+              alt="Harnais réglable pour chien"
             />
             <p class="Name">Harnais réglable taille M</p>
             <h3 class="Price">21,15 €</h3>
@@ -114,7 +107,7 @@
             <img
               class="Img-item"
               src="img/panier.jpg"
-              alt="Photo de l'animal"
+              alt="Panier déhoussable pour chien"
             />
             <p class="Name">Panier déhoussable 80 cm</p>
             <h3 class="Price">59,00 €</h3>
@@ -124,7 +117,7 @@
             <img
               class="Img-item"
               src="img/produit6.jfif"
-              alt="Photo de l'animal"
+              alt="Shampooing pour animaux"
             />
             <p class="Name">Shampooing peaux</p>
             <h3 class="Price">12,50 €</h3>
@@ -134,7 +127,7 @@
             <img
               class="Img-item"
               src="img/balles.jpg"
-              alt="Photo de l'animal"
+              alt="Balles lumineuses pour chien"
             />
             <p class="Name">Balles lumineuses x2</p>
             <h3 class="Price">71,20 €</h3>
@@ -142,7 +135,6 @@
           </div>
         </div>
       </section>
-
       <section class="Pages">
         <div class="Page">&lt;</div>
         <div class="Page-main">1</div>
@@ -165,10 +157,9 @@
             <div class="reseaux-sociaux">
               <a href="#" aria-label="Instagram" class="social-icon"></a>
               <a href="#" aria-label="YouTube" class="social-icon"></a>
-              <a href="#" aria-label="Share" class="social-icon"></a>
+              <a href="#" aria-label="Partager" class="social-icon"></a>
             </div>
           </div>
-
           <div class="pied-colonne">
             <h4>Boutique</h4>
             <ul class="menu-colonne">
@@ -179,7 +170,6 @@
               <li><a href="#">Poissons</a></li>
             </ul>
           </div>
-
           <div class="pied-colonne">
             <h4>Aide</h4>
             <ul class="menu-colonne">
@@ -189,7 +179,6 @@
               <li><a href="#">Conditions générales</a></li>
             </ul>
           </div>
-
           <div class="pied-colonne">
             <h4>Contact</h4>
             <ul class="contact-colonne">
@@ -200,7 +189,6 @@
             </ul>
           </div>
         </div>
-
         <div class="pied-bas">
           <p>2026 PetNest. Tous droits réservés.</p>
           <div class="pied-liens-droit">
