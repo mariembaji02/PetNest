@@ -565,36 +565,33 @@ section .form div .btn-orange
 /* / 2. Tablette / */
 
 @media (min-width: 768px) {
-    .menu-ouvrir {
-        display: none;
-    }
+  .menu-ouvrir {
+  display: none;
+  }
   
 
 
-    .sidebar-menu {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        position: static;
-        width: auto;
-        height: auto;
-        padding: 0;
-        gap: 10px;
-        box-shadow: none;
-    }
+  .sidebar-menu {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      position: static;
+      width: auto;
+      height: auto;
+      padding: 0;
+      gap: 10px;
+      box-shadow: none;
+  }
 
+  .sidebar-menu a {
+    padding: 10px;
+  }
 
-
-    .sidebar-menu a {
-        padding: 10px;
-       
-    }
-
-
-    .fermer {
-        display: none;
-    }
-     .header-actions{
+  .fermer {
+    display: none;
+  }
+  
+ .header-actions{
     display: none;
   }
 
@@ -677,17 +674,6 @@ section .form div .btn-orange
         display: none;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
 .active, .accordion:hover {
   background-color: #ccc;
 }
@@ -698,54 +684,6 @@ section .form div .btn-orange
   display: none;
   overflow: hidden;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* / 3. Desktop  */
-@media(min-width: 1024px) {
-   .pied-grille {
-    grid-template-columns:2fr 1fr 1fr 1fr;
-    gap: 32px;
-  }
-  .sidebar-menu a:hover
-  {
-    text-decoration: none;
-  }
-
-  .sidebar-menu a:hover
-  {
-    text-decoration: none;
-  }
-
-  .pied-bas {
-    flex-direction: column;
-    gap: 12px;
-    text-align: center;
-  }
-   .conteneur h1{
-    font-size: 48px;
-  }
-  .Button-Info{
-    grid-template-columns: 1fr 1fr;
-  }
-  .Img-Info{
-    margin: 32px;
-    max-width: 90%;
-    height: auto;
-  }
-}
-
 
 .Section-Info{
     background-color: #fff4ed;
@@ -790,6 +728,83 @@ section .form div .btn-orange
   border-radius: 6px;
 }
 
+/* Page : Acceuil => Section : Produits */
+
+.Section-Produits{
+    background-color: #fafaf9;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 12px;
+}
+h2{
+  font-size: 20px;
+  font-weight: 600;
+}
+h3{
+  font-size: 16px;
+  font-weight: 600;
+}
+h4{
+  font-size: 12px;
+  font-weight: 500;
+}
+.texte-section{
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 12px;
+}
+.name{
+  color:#C2410C
+}
+.Afichage{
+  padding: 8px;
+  font-weight: 600;
+  color:#C2410C
+}
+.Produits{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+.item{
+  display: grid;
+  grid-template-rows: 70% 30%;
+  background-color: #FFF4ED;
+  border-radius: 20px;
+}
+.Img-item{
+  border-radius: 20px 20px 0 0;
+  height: 100%;
+  width: 100%;
+}
+.item-info{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 0 0 20px 20px;
+  padding: 16px;
+}
+.Name{
+  padding: 12px auto;
+}
+.Achat{
+  display: flex;
+  flex-direction: row;
+}
+.Price{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.Ajouter {
+  cursor: pointer;
+  background-color: #C2410C;
+  border-radius: 6px;
+  padding: 6px 12px;
+  margin-left: auto;
+  color: white;
+}
+
 @media(min-width:768px){
   .Section-Info{
     grid-template-columns: 1fr 1fr ;
@@ -799,10 +814,32 @@ section .form div .btn-orange
     max-width: 90%;
     height: auto;
   }
+ 
 }
 
-@media(min-width:1024px){
- 
+@media(min-width: 1024px) {
+   .pied-grille {
+    grid-template-columns:2fr 1fr 1fr 1fr;
+    gap: 32px;
+  }
+  .sidebar-menu a:hover
+  {
+    text-decoration: none;
+  }
+
+  .sidebar-menu a:hover
+  {
+    text-decoration: none;
+  }
+
+  .pied-bas {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+   .conteneur h1{
+    font-size: 48px;
+  }
   .Button-Info{
     grid-template-columns: 1fr 1fr;
   }
@@ -812,4 +849,3 @@ section .form div .btn-orange
     height: auto;
   }
 }
-
