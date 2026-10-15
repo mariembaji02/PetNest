@@ -739,5 +739,76 @@ section .form div .btn-orange
 }
 
 
+.Section-Banner {
+  background-color: #F0FDFA;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 80px;
+}
+.Banner-title{
+  max-width: 500px;
+}
+.Banner-title h2 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+.Banner-title p {
+  color: #57534E;
+  line-height: 1.5;
+}
 
+.Cartes{
+  display: flex;
+  gap: 40px;
+}
 
+.Cartes h3 {
+  color: #0F766E;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.Cartes p {
+  color: #57534E;
+}
+
+.Hero-image {
+  display: flex;
+  width: 300px;
+  border-radius: 10px;
+  
+}
+
+.Section-Hero {
+  background-color: #FFF4ED;
+  display: flex;
+  gap: 40px;
+  padding: 60px 80px;
+  
+
+}
+
+.Hero-animal-info h3 {
+font-weight: bold;
+font-size: 20px;
+
+}
+
+.Hero-animal-info h4 {
+
+  font-weight: bold;
+}
+
+.Hero-animal-info p {
+  color: #57534E;
+}
+
+.button {
+    border: 1px solid #dc800e;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
