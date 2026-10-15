@@ -807,8 +807,75 @@ font-size: 20px;
 }
 
 .button {
-    border: 1px solid #dc800e;
+  border: 1px solid #dc800e;
   border-radius: 4px;
   padding: 5px;
   width: 150px;
+}
+
+.section-contacts {
+  display: flex;
+  width: 50%; 
+  margin-left: 200px;
+  margin: 40px;
+  gap: 35px;
+}
+.section-contact-title {
+  margin-right: 50%;
+  width: 350px;
+
+
+}
+
+.section-contact-title h4 {
+  font-weight: bold;
+  color: #B45309;
+}
+
+.section-contact-title h2{
+font-weight: bold;
+font-size: 20px;
+ width: 350px;
+}
+
+
+.form-Contacts {
+background-color: #F5F5F4;
+border-radius: 8px;
+border-collapse: separate;
+border-spacing: 20px 15px;
+ width: 500px;
+}
+
+.form-Contacts  table td {
+     /* border: 3px solid black; */
+     padding: 3%;
+}
+
+.form-Contacts table {
+    border-collapse: separate;
+    border-spacing: 20px 15px;
+    width: 100%;
+}
+
+
+.form-Contacts input {
+border: 1px solid #A8A29E ;
+border-radius: 5px;
+padding: 10px;
+ 
+}
+
+#animal {
+border: 1px solid #A8A29E ;
+border-radius: 5px;
+padding: 10px;
+width: 100%;
+}
+
+#logement {
+border: 1px solid #A8A29E ;
+border-radius: 5px;
+padding: 10px;
+width: 100%;
 }
