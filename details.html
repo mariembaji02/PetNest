@@ -1,9 +1,9 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PetNest - Accueil</title>
+    <title>PetNest - Detail Produit</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
@@ -32,13 +32,137 @@
                 <li><a href="rdv.html">Prendre RDV</a></li>
             </ul>
         </nav>
-    </div>
-    <div class="div">
-        <h1>Boutique - Chiens</h1>
-        <p>Alimentation, accessoires, hygiène et jouets sélectionnés par notre équipe.</p>
+        
     </div>
 </header>
+<main> 
+  <section class="Produits-Acheter" >
+                <div class="images">
+                     <div class="big-img" style="justify-items: center;">
+                      <img src="img/produit6.jfif" alt="Produit d'animal">
+                     </div>
+                     <div class="imgs" >
+                          <img src="img/produit1.jfif" alt="Produit d'animal">
+                          <img src="img/produit2.jfif" alt="Produit d'animal">
+                          <img src="img/produit3.jfif" alt="Produit d'animal">
+                          <img src="img/produit4.jfif" alt="Produit d'animal">
+                          <img src="img/produit5.jfif" alt="Produit d'animal">
+                          <img src="img/produit6.jfif" alt="Produit d'animal">
+                     </div>
+                </div>
+                <div class="produit-Info">
+                  <h1>Croquettes saumon & riz 10 kg </h1>
+                  <p class="small"><span class="number">49,90 €</span> TTC · soit 4,99 € / kg</p>
+                  <p>Recette riche en saumon frais pour chiens adultes de toutes tailles.
+                     Sans colorant ni conservateur artificiel.</p>
+                     <!-- button de incrementation  -->
+                     <p class="buttons">  <button class="btn-normal">+ 1 -</button>
+                          <button class="btn-orange">Ajouter au panier</button></p>
+                      <div style="background-color: #F5F5F4;border-radius: 5px;padding: 2%;">
+                        <!-- les icons de verification en vert -->
+                       
+                        <p> <i class="fa-solid fa-check" style="color: #0D9488;"></i>Livraison offerte dès 49 €</p>
+                        
+                        <p>  <i class="fa-solid fa-check" style="color: #0D9488;"></i>Retour gratuit sous 30 jours</p>
+                         
+                        <p> <i class="fa-solid fa-check" style="color: #0D9488;"></i>Conseils personnalisés en boutique</p>
+                      </div>
+                </div>
+               
+    </section>
+    <section class="Produits-Avis">
 
+
+      <div  style="border-bottom: 1px solid rgb(229, 226, 226);height: 29px;">
+         <span style="color:#F97316;border-bottom: 2px solid;padding: 5px;margin-left: 15px;"> Avis(124)</span>
+      </div>
+      <section class="review" >
+            <div class="para-etoile" style="display: flex;gap: 20px; "> 
+              
+              <div class="number"  style="line-height: 20px;">4,8</div>
+
+              
+                <div style="margin-top: 7px;">
+                 <div class="etoile-icon">
+
+
+              
+                <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
+                <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
+                <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
+                <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
+                <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
+               
+                 </div>
+                  <p class="small"> Basé sur 124 avis</p>
+              
+                </div>
+            </div>
+            <div class="para-etoile  part-avis">
+              <p class="etoile-icon">
+                 <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
+                 <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
+                 <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
+                 <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
+                 <i class="fa-sharp fa-solid fa-star" style="color:  rgb(241, 196, 37);"></i>
+                  <span class="small"> Sara B. · 12 octobre 2026</span> 
+              </p>
+              <p>
+                Mon chien adore et son pelage est plus brillant. Livraison rapide.
+              </p>
+            </div>
+            <div class="para-etoile part-avis">
+              <p  class="etoile-icon">
+                 <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
+                 <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
+                 <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
+                 <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
+                 <i class="fa-sharp fa-solid fa-star" style="color: rgb(236, 222, 172);"></i>
+                   <span class="small"> Youssef A. · 3 octobre 2026</span>
+              </p>
+              <p>
+                Bonne qualité, grand format pratique. Le sac pourrait être refermable.
+              </p>
+            </div>
+       </section>
+       <section class="review form">
+          <div>
+            <h2> Laisser un avis</h2>
+          </div>
+           <div>
+            <label for="">Votre note*</label>
+           </div>
+           <div class="note">
+            
+                 <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
+                 <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
+                 <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
+                 <i class="fa-sharp fa-solid fa-star" style="color: rgb(241, 196, 37);"></i>
+                 <i class="fa-sharp fa-solid fa-star" style="color: rgb(236, 222, 172);"></i>
+
+           </div>
+           <div>
+            <label for="titre">Titre de l'avis*</label>
+           </div>
+           <div class="titre-avis">
+            
+            <input type="text" name="titre avis" id="titre" placeholder="   Ex. Excellent rapport qualité-prix">
+           </div>
+           <div>
+             <label for="commentaire">Votre commentaire*</label>
+           </div>
+           <div class="commentaire">
+           
+            <textarea name="commentaire" id="commentaire" ></textarea>
+           </div>
+           <div class="btn-avis">
+            <button class="btn-orange">Publier mon avis</button>
+           </div>
+       </section>
+    </section>
+
+  
+</main>
 <footer class="pied-de-page">
       <div class="conteneur">
         <div class="pied-grille">

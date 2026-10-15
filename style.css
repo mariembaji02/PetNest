@@ -1,22 +1,34 @@
+
+/* 1. Mobile First: styles de base */
+
+
+
 /* header */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
 }
 
 main{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 body {
     font-family: "Poppins", sans-serif;
+   
+    font-size: 14px;
     width: 100%;
-
 }
+
+
+
+
 
 
 .en-tete {
@@ -24,12 +36,6 @@ body {
     padding: 15px;
 }
 
-
-.en-tete-contenu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 
 .logo-image {
@@ -72,7 +78,6 @@ body {
     color: black;
     text-decoration: none;
    
-   
 }
 .sidebar-menu a:hover {
    text-decoration: underline;
@@ -111,47 +116,6 @@ body {
 
 
 
-@media (min-width: 768px) {
-    .menu-ouvrir {
-        display: none;
-    }
-  
-
-
-    .sidebar-menu {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        position: static;
-        width: auto;
-        height: auto;
-        padding: 0;
-        gap: 10px;
-        box-shadow: none;
-    }
-
-
-
-    .sidebar-menu a {
-        padding: 10px;
-    }
-
-
-    .fermer {
-        display: none;
-    }
-}
-
-
-@media (max-width: 767px) {
-    .sidebar-menu {
-        display: none;
-    }
-    .sidebar-menu.menu-visible {
-        display: flex;
-    }
-
-}
 
 
 
@@ -161,23 +125,18 @@ body {
   width: 100%;
   max-width: 1200px;
   margin: 16px auto;
-  padding: 0 24
+
+  padding: 0 24px;
+
 }
 
-
-.en-tete {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  background-color: #FFFFFF;
-  border-bottom: 1px solid #E5E7EB;
-}
 
 .en-tete-contenu {
   height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+ 
 }
 
 .logo-wrapper {
@@ -202,6 +161,7 @@ body {
 nav[aria-label="Navigation principale"] {
   display: flex;
   justify-content: center;
+ 
 }
 
 .menu {
@@ -217,6 +177,7 @@ nav[aria-label="Navigation principale"] {
 .menu-rdv{
   display: none;
 }
+ 
 
 
 .sidebar-menu li a:hover 
@@ -227,6 +188,15 @@ nav[aria-label="Navigation principale"] {
 
 }
 
+
+.sidebar-menu li a:hover 
+{
+ 
+  background-color: #FFF4ED;
+  color: #EA580C;
+
+
+}
 
 
 .menu-toggle {
@@ -246,6 +216,184 @@ nav[aria-label="Navigation principale"] {
   transition: all 0.3s ease;
 }
 
+/* Partie Detail Produis */
+section 
+{
+ 
+  width: 100%;
+}
+
+.Produits-Acheter .images
+{
+    margin: auto;
+    width: 100%;
+}
+.images .big-img
+{
+  padding-top: 10%;
+  width:100%;
+  text-align: center;
+}
+.images .big-img img
+{
+  width:90%;
+  height: 300px;
+  border-radius: 7%;
+  
+
+}
+.Produits-Acheter .imgs{
+
+  width: 100%;
+ 
+  gap: 2%;
+  padding: 2%;
+}
+.imgs
+{
+  /* background-color: #9A3412; */
+  display: flex;
+  /* flex-wrap: wrap; */
+   /* grid-template-columns: repeat(6, 1fr); */
+}
+.imgs img
+{
+  width: 100px;
+  height: 100px;
+  border-radius: 9%;
+}
+
+.images img
+{
+  border: 2px solid #C2410C;
+}
+
+.produit-Info
+{
+  padding: 5%;
+  width: 100%;
+ 
+}
+.produit-Info p
+{
+  
+  margin: 3%;
+}
+ .small
+{
+  font-size: 13px;
+  color: #787371ec;
+ 
+}
+
+.number
+{
+  font-weight: bolder;
+  font-size: 38px;
+  color: black;
+  padding: 10px;
+}
+.produit-Info button
+{
+  height: 35px;
+  border-radius: 5px;
+  margin-left: 5%;
+  padding: 3px;
+}
+.produit-Info .btn-normal
+{
+  width: 30%;
+  border: 1px solid black;
+  
+ 
+}
+ .btn-orange
+{
+  width: 50%;
+  border: 1px solid #C2410C;
+  background-color: #C2410C;
+  color: white;
+  font-weight: 600;
+ 
+}
+.Produits-Avis
+{
+  background-color: #F5F5F4;
+  padding: 3%;
+   
+}
+
+.para-etoile
+{
+  
+   margin: 5px;
+   padding:   3%;
+   border-radius: 5px;
+}
+
+.part-avis
+{
+  background-color: white;
+  padding: 7%;
+  border: 1px solid #d1cbc7;
+  border-radius: 7px;
+}
+.etoile-icon
+{
+ 
+  font-size: 13px;
+}
+.part-avis p
+{
+ background-color:white;
+ margin: 5px;
+
+}
+section .review
+{
+  margin: auto;
+}
+section .form
+{
+  background-color:white ;
+  border: 1px solid #d1cbc7;
+  padding: 4%;
+  width: 97%;
+  border-radius: 7px;
+  
+}
+section .form div
+{
+  
+  margin: 3%;
+  width: 90%;
+  
+}
+section .form div h2
+{
+     
+     font-weight: 500;
+}
+section .form div input,textarea
+{
+  width: 100%;
+  height: 50px;
+  border: 1px solid ;
+  border-radius: 5px;
+}
+section .form div textarea
+{
+    height: 80px;
+}
+section .form div .btn-orange
+{
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+
+/* footer */
 
 .pied-de-page {
  
@@ -257,7 +405,7 @@ nav[aria-label="Navigation principale"] {
 
 .pied-grille {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  grid-template-columns: 1fr;
   gap: 40px;
   padding-bottom: 48px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -302,6 +450,7 @@ nav[aria-label="Navigation principale"] {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  list-style: none;
 }
 
 .menu-colonne a,
@@ -309,6 +458,7 @@ nav[aria-label="Navigation principale"] {
 .pied-liens-droit a {
   font-size: 14px;
   color: #9CA3AF;
+  text-decoration: none;
 }
 
 .menu-colonne a:hover,
@@ -363,19 +513,88 @@ nav[aria-label="Navigation principale"] {
   background-color: white;
   display: none;
   overflow: hidden;
+
 }
 
-@media (max-width: 992px) {
-  .pied-grille {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
-  }
+
+
+
+.Section-Info{
+    background-color: #fff4ed;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 12px;
+}
+.conteneur h1{
+  font-size: 32px;
+  font-weight: bold;
+}
+.conteneur p{
+  color: #57534E;
+  margin-bottom: 16px;
+}
+.Button-Info{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap:8px;
+}
+.Button-Info .btn-orange{
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
   
 }
+.btn-Adopter{
+  display: flex;
+  justify-content: center;
+  border: 2px solid #C2410C;
+  background-color: white;
+  border-radius: 6px;
+  color: #C2410C;
+  padding: 6px;
+}
+.Img-Info{
+  display: block;
+  margin: auto;
+  border-radius: 6px;
 
 
-@media (max-width: 768px) {
-  .header-actions{
+}
+
+/* / 2. Tablette / */
+
+@media (min-width: 768px) {
+    .menu-ouvrir {
+        display: none;
+    }
+  
+
+
+    .sidebar-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: static;
+        width: auto;
+        height: auto;
+        padding: 0;
+        gap: 10px;
+        box-shadow: none;
+    }
+
+
+
+    .sidebar-menu a {
+        padding: 10px;
+       
+    }
+
+
+    .fermer {
+        display: none;
+    }
+     .header-actions{
     display: none;
   }
 
@@ -417,14 +636,93 @@ nav[aria-label="Navigation principale"] {
     color: white;
     margin-top: 10px;
   }
-
-}
-
-@media (max-width: 576px) {
   .pied-grille {
-    grid-template-columns: 1fr;
+    grid-template-columns:2fr 1fr 1fr 1fr;
     gap: 32px;
   }
+   /* .Section-Info{
+    grid-template-columns: 1fr 1fr ;
+    
+  }
+  .Img-Info{
+    margin: 32px;
+    max-width: 90%;
+    height: auto;
+  } */
+   .menu-ouvrir {
+        display: none;
+    }
+  
+    .sidebar-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: static;
+        width: auto;
+        height: auto;
+        padding: 0;
+        gap: 10px;
+        box-shadow: none;
+    }
+
+
+
+    .sidebar-menu a {
+        padding: 10px;
+       
+    }
+
+
+    .fermer {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* / 3. Desktop  */
+@media(min-width: 1024px) {
+   .pied-grille {
+    grid-template-columns:2fr 1fr 1fr 1fr;
+    gap: 32px;
+  }
+  .sidebar-menu a:hover
+  {
+    text-decoration: none;
+  }
+
   .sidebar-menu a:hover
   {
     text-decoration: none;
@@ -435,7 +733,19 @@ nav[aria-label="Navigation principale"] {
     gap: 12px;
     text-align: center;
   }
+   .conteneur h1{
+    font-size: 48px;
+  }
+  .Button-Info{
+    grid-template-columns: 1fr 1fr;
+  }
+  .Img-Info{
+    margin: 32px;
+    max-width: 90%;
+    height: auto;
+  }
 }
+
 
 .Section-Info{
     background-color: #fff4ed;
@@ -492,9 +802,7 @@ nav[aria-label="Navigation principale"] {
 }
 
 @media(min-width:1024px){
-  .conteneur h1{
-    font-size: 48px;
-  }
+ 
   .Button-Info{
     grid-template-columns: 1fr 1fr;
   }
@@ -504,3 +812,4 @@ nav[aria-label="Navigation principale"] {
     height: auto;
   }
 }
+
