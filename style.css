@@ -457,6 +457,51 @@ details p {
   font-weight: 300;
 }
 
+.Contacts-Wrapper{
+  margin: 20px;
+}
+
+.Form-Wrapper{
+  font-family: 'Poppins', Arial, sans-serif;
+  font-weight: 200;
+  padding: 20px;
+  background-color: #fafaf9;
+  border-radius: 20px;
+}
+
+.Form-Item{
+  margin-bottom: 1em;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-weight: 200;
+}
+
+.Form-Item input {
+  font-family: 'Poppins', Arial, sans-serif;
+  padding: 14px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.Form-Item select {
+  padding: 14px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.Form-Item label {
+  font-weight: 400;
+  display: block;
+  margin-bottom: 8px;
+  
+}
+
+.Form-Item #Submitbutton {
+  border: none;
+  color: white;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-weight: 500;
+  background-color: #c2410c;
+}
 
 @media (max-width: 992px) {
   .pied-grille {
