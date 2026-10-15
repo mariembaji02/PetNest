@@ -111,11 +111,15 @@ body {
 
 #Section-Hero{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  gap: 30px;
+  margin-left: 1em;
+
+ align-items: center;
 }
 
 .faq {
-  margin: 50px 40px 0px 90px;
+  margin: 50px 40px 0px 5px;
   line-height: 2;
 }
 
@@ -405,35 +409,53 @@ nav[aria-label="Navigation principale"] {
   background-color: #9A3412;
 }
 
-.accordion {
-  background-color: #eee;
-  color: #444;
+
+
+.accordion-Wrapper {
+  width: 100%;
+  max-width: 300px;
+}
+
+details {
+  margin: 10px 0;
+  background-color: white;
+  color: #7c7c7c;
   cursor: pointer;
   padding: 18px;
   width: 100%;
   text-align: left;
-  border: none;
+  border: 2px solid;
+  border-color: rgb(195, 195, 195);
+  border-radius: 10px;
   outline: none;
-  transition: 0.4s;
+  line-height: 1.6em;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-weight: 480;
+}
+
+details summary {
+  color: black;
+}
+
+summary{
+  display: flex;
+  list-style: none;
 }
 
 
-.active,
-.accordion:hover {
-  background-color: #ccc;
+details[open]{
+summary {
+  line-height: 50px;
+  transition: 0.5s;
+}
+background-color: #fff4ed;
+
 }
 
-.panel {
-  padding: 0 18px;
-  background-color: white;
-  display: none;
-  overflow: hidden;
+details p {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-weight: 300;
 }
-
-
-
-
-
 
 
 @media (max-width: 992px) {
