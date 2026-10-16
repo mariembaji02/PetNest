@@ -7,6 +7,8 @@
 
 body {
   font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -79,7 +81,7 @@ body {
   align-items: start;
   justify-content: start;
   text-align: start;
-  padding: 60px 20px;
+  padding: 60px 100px;
   min-height: 25vh;
   gap: 15px;
 }
@@ -111,15 +113,16 @@ body {
 
 #Section-Hero{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 30px;
   margin-left: 1em;
-
- align-items: center;
+  margin-top: 40px;
+  margin-bottom: 50px;
+ /* align-items: center; */
 }
 
 .faq {
-  margin: 50px 40px 0px 5px;
+  margin: 50px 40px 0px 100px;
   line-height: 2;
 }
 
@@ -412,8 +415,9 @@ nav[aria-label="Navigation principale"] {
 
 
 .accordion-Wrapper {
+  margin-left: 50px;
   width: 100%;
-  max-width: 300px;
+  max-width: 58%;
 }
 
 details {
@@ -457,8 +461,22 @@ details p {
   font-weight: 300;
 }
 
+#Section-Contacts{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 10fr 2fr;
+  grid-template-rows: auto auto auto;
+  gap: 30px;
+  margin: 40px auto;
+  grid-template-areas: 
+  "box-1 box-2"
+  "box-1 box-3"
+  "box-1 box-4";
+}
+
 .Contacts-Wrapper{
-  margin: 20px;
+  grid-area: box-1;
+  margin: 0;
 }
 
 .Form-Wrapper{
@@ -479,12 +497,14 @@ details p {
   font-family: 'Poppins', Arial, sans-serif;
   padding: 14px;
   width: 100%;
+  border: 1px solid #D1D5DB;
   border-radius: 10px;
 }
 
 .Form-Item select {
   padding: 14px;
   width: 100%;
+  border: 1px solid #D1D5DB;
   border-radius: 10px;
 }
 
@@ -504,9 +524,10 @@ details p {
 }
 
 .Info-Wrapper{
+  grid-area: box-2;
+  margin: 0;
   font-family: 'Poppins', Arial, sans-serif;
   font-weight: 500;
-  margin: 20px;
   padding: 30px;
   border: 1px solid rgb(200, 200, 200);
   border-radius: 10px;
@@ -521,22 +542,23 @@ details p {
 }
 
 .map {
+  grid-area: box-3;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  border-radius: 10px;
-  padding: 20px;
+  padding: 0;
+  margin: 0;
 }
 
-iframe{
-  border-radius: 10px;
+.map iframe {
+  width: 100%;
+  border-radius: 20px;
 }
 
-.Icons{
-  font-family: 'Poppins', Arial, sans-serif;
-  font-weight: 700;
-  margin-left: 20px;
+.Icons {
+  grid-area: box-4;
+  margin: 0;
   list-style: none;
 }
 
@@ -545,11 +567,8 @@ iframe{
   gap: 15px;
   align-items: center;
   margin-top: 8px;
-  padding-top: 10px;
-  padding-bottom: 20px;
   color: #c2410c;
   font-size: 26px;
-  border-radius: 50px;
 }
 
 @media (max-width: 992px) {
@@ -612,3 +631,4 @@ iframe{
     text-align: center;
   }
 }
+
