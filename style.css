@@ -615,6 +615,36 @@ section .form div .btn-orange
     {
       background-color: #afa29c;
     }
+
+    @media (max-width: 600px) {
+  .filterbuttons {
+    justify-content: flex-start;
+  }
+
+  .filter,
+  .filterall {
+    font-size: 12px;
+    padding: 7px 10px;
+  }
+
+  .Affichage {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .Pages {
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 600px) {
+  .Shop {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .Section-Shop {
+    margin: 30px 25px;
+  }
+}
 @media (min-width: 768px) {
     .menu-ouvrir {
         display: none;
