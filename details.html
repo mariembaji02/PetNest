@@ -7,6 +7,12 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 </head>
 <body>
 <header class="en-tete">
@@ -25,11 +31,11 @@
                          onclick="hideSidebar()">
                 </li>
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="catalogue.html">Boutique</a></li>
+                <li><a href="catalogue.html" >Boutique</a></li>
                 <li><a href="adoption.html">Adoption</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="rdv.html">Prendre RDV</a></li>
+                <li class="btn-rdv"><a href="rdv.html" >Prendre RDV</a></li>
             </ul>
         </nav>
         
@@ -41,14 +47,20 @@
                      <div class="big-img" style="justify-items: center;">
                       <img src="img/produit6.jfif" alt="Produit d'animal">
                      </div>
-                     <div class="imgs" >
-                          <img src="img/produit1.jfif" alt="Produit d'animal">
-                          <img src="img/produit2.jfif" alt="Produit d'animal">
-                          <img src="img/produit3.jfif" alt="Produit d'animal">
-                          <img src="img/produit4.jfif" alt="Produit d'animal">
-                          <img src="img/produit5.jfif" alt="Produit d'animal">
-                          <img src="img/produit6.jfif" alt="Produit d'animal">
+                     <div class="carousel" >
+                         <div class="imgs" >
+                          <img src="img/produit1.jfif" alt="Produit d'animal" class="image">
+                          <img src="img/produit2.jfif" alt="Produit d'animal" class="image">
+                          <img src="img/produit3.jfif" alt="Produit d'animal" class="image">
+                          <img src="img/produit4.jfif" alt="Produit d'animal" class="image">
+                          <img src="img/produit5.jfif" alt="Produit d'animal" class="image">
+                          <img src="img/produit3.jfif" alt="Produit d'animal" class="image">
+                          <img src="img/produit4.jfif" alt="Produit d'animal" class="image">
+                          <img src="img/produit5.jfif" alt="Produit d'animal" class="image">
+                      
+                        </div>
                      </div>
+                    
                 </div>
                 <div class="produit-Info">
                   <h1>Croquettes saumon & riz 10 kg </h1>
@@ -56,16 +68,23 @@
                   <p>Recette riche en saumon frais pour chiens adultes de toutes tailles.
                      Sans colorant ni conservateur artificiel.</p>
                      <!-- button de incrementation  -->
-                     <p class="buttons">  <button class="btn-normal">+ 1 -</button>
-                          <button class="btn-orange">Ajouter au panier</button></p>
-                      <div style="background-color: #F5F5F4;border-radius: 5px;padding: 2%;">
+                     <div class="buttons">  
+                             <div class="quantite" >
+                                  <button type="button" >−</button>
+                                  <input type="number " value="1" min="1"> 
+                                  <button type="button">+</button>
+                              </div>
+                          <button class="btn-orange">Ajouter au panier</button>
+                      </div>
+                      <div style="background-color: #FAFAF9;border-radius: 5px;padding: 2%;margin-top: 2%;padding: 4%;">
                         <!-- les icons de verification en vert -->
                        
-                        <p> <i class="fa-solid fa-check" style="color: #0D9488;"></i>Livraison offerte dès 49 €</p>
+                        <p> <i class="fa-solid fa-check check-icon" style="color: #0D9488;"></i>Livraison offerte dès 49 €</p>
                         
-                        <p>  <i class="fa-solid fa-check" style="color: #0D9488;"></i>Retour gratuit sous 30 jours</p>
+                        <p>  <i class="fa-solid fa-check check-icon" style="color: #0D9488;"></i>Retour gratuit sous 30 jours</p>
                          
-                        <p> <i class="fa-solid fa-check" style="color: #0D9488;"></i>Conseils personnalisés en boutique</p>
+                        <p> <i class="fa-solid fa-check check-icon" style="color: #0D9488;"></i>Conseils personnalisés en boutique</p>
+>>>>>>> .merge_file_pvSvfe
                       </div>
                 </div>
                
@@ -76,7 +95,8 @@
       <div  style="border-bottom: 1px solid rgb(229, 226, 226);height: 29px;">
          <span style="color:#F97316;border-bottom: 2px solid;padding: 5px;margin-left: 15px;"> Avis(124)</span>
       </div>
-      <section class="review" >
+     <div class="countainer-form-reviews">
+       <section class="review" >
             <div class="para-etoile" style="display: flex;gap: 20px; "> 
               
               <div class="number"  style="line-height: 20px;">4,8</div>
@@ -125,8 +145,8 @@
               </p>
             </div>
        </section>
-       <section class="review form">
-          <div>
+       <form class="review form">
+          <div class="titre-avis2">
             <h2> Laisser un avis</h2>
           </div>
            <div>
@@ -153,13 +173,14 @@
            </div>
            <div class="commentaire">
            
-            <textarea name="commentaire" id="commentaire" ></textarea>
+            <textarea name="commentaire" id="commentaire" minlength="11" required ></textarea>
            </div>
            <div class="btn-avis">
-            <button class="btn-orange">Publier mon avis</button>
+            <input type="submit" class="btn-orange" value="Publier mon avis">
            </div>
-       </section>
+       </form>
     </section>
+     </div>
 
   
 </main>
