@@ -14,7 +14,7 @@ a {
   color: inherit;
   text-decoration: none;
 }
-  
+
 ul {
   list-style: none;
 }
@@ -34,7 +34,7 @@ select {
   border-bottom: 1px solid #e5e7eb;
 }
 
-.actif-button  {
+.actif-button {
   text-decoration: underline;
   color: #c2410c !important;
 }
@@ -150,6 +150,12 @@ select {
   margin: 25px 15px;
 }
 
+.range-slide {
+  display: flex;
+  font-size: 0.85rem;
+  justify-content: space-between;
+}
+
 .filterbuttons {
   display: flex;
   flex-wrap: wrap;
@@ -251,7 +257,7 @@ select {
 .Price {
   font-size: 18px;
   font-weight: 600;
-  color: #c2410c;
+  color: black;
   margin-top: 8px;
 }
 
@@ -548,19 +554,12 @@ select {
     scale: 1.05;
   }
 
-
-
   .range {
-    accent-color: #F97316;
+    accent-color: #f97316;
     border-radius: 1rem;
   }
 
-  .min-range {
 
-  }
-
-  .max-range {
-  }
 
   .Shop {
     grid-template-columns: repeat(3, 1fr);
