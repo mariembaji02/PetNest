@@ -1859,6 +1859,7 @@ input[type=checkbox] {
     .Section-Banner {
         padding: 60px max(40px, calc((100% - 1200px) / 2));
         gap: 40px;
+     
     }
 
     .Cartes {
