@@ -829,7 +829,7 @@ h4{
     max-width: 90%;
     height: auto;
   }
- .Produits{
+ .Produits, .Animaux{
     grid-template-columns: 1fr 1fr;
   }
   .texte-section{
@@ -871,6 +871,9 @@ h4{
   }
   .Produits{
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .Animaux{
+    grid-template-columns: 1fr 1fr 1fr;
   }
   h2{
     font-size: 32px;
