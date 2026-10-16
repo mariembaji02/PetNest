@@ -814,7 +814,13 @@ h4{
     max-width: 90%;
     height: auto;
   }
- 
+ .Produits{
+    grid-template-columns: 1fr 1fr;
+  }
+  .texte-section{
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 @media(min-width: 1024px) {
@@ -847,5 +853,11 @@ h4{
     margin: 32px;
     max-width: 90%;
     height: auto;
+  }
+  .Produits{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  h2{
+    font-size: 32px;
   }
 }
