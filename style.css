@@ -25,11 +25,9 @@ body {
     font-size: 14px;
     width: 100%;
 }
-
-
-
-
-
+p{
+  color: #57534E;
+}
 
 .en-tete {
     background-color: white;
@@ -761,18 +759,18 @@ h4{
   font-weight: 600;
   color:#C2410C
 }
-.Produits{
+.Produits, .Animaux{
   display: grid;
   grid-template-columns: 1fr;
   gap: 12px;
 }
-.item{
+.item, .Animal{
   display: grid;
   grid-template-rows: 70% 30%;
   background-color: #FFF4ED;
   border-radius: 20px;
 }
-.Img-item{
+.Img-item, .Img-Animal{
   border-radius: 20px 20px 0 0;
   height: 100%;
   width: 100%;
@@ -805,6 +803,23 @@ h4{
   color: white;
 }
 
+/* Page : Acceuil => Section : Adoption */
+
+.Section-Adoption{
+    background-color: #F0FDFA;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 12px;
+}
+.Découvrir{
+  cursor: pointer;
+  background-color: white;
+  border: solid 2px #C2410C;
+  border-radius: 6px;
+  padding: 6px 12px;
+  text-align: center;
+  color: #C2410C;
+}
 @media(min-width:768px){
   .Section-Info{
     grid-template-columns: 1fr 1fr ;
