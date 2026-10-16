@@ -14,7 +14,7 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
+  
 ul {
   list-style: none;
 }
@@ -266,8 +266,16 @@ select {
   font-size: 13px;
 }
 
-.Ajouter:hover {
-  background-color: #9a3412;
+.Desa {
+  display: inline-block;
+  padding: 8px 18px;
+  margin-top: 12px;
+  cursor: not-allowed;
+  border: none;
+  border-radius: 20px;
+  background-color: grey;
+  color: white;
+  font-size: 13px;
 }
 
 .Pages {
@@ -530,6 +538,28 @@ select {
   .Section-Shop {
     grid-template-columns: 200px 1fr;
     gap: 35px;
+  }
+
+  .Img-item {
+    cursor: pointer;
+  }
+
+  .Img-item:hover {
+    scale: 1.05;
+  }
+
+
+
+  .range {
+    accent-color: #F97316;
+    border-radius: 1rem;
+  }
+
+  .min-range {
+
+  }
+
+  .max-range {
   }
 
   .Shop {
