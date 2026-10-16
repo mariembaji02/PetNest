@@ -35,53 +35,56 @@
 
     </div>
 
-    
 </header>
-
-  </header>
-  <div class="div">
-      <p>SERVICES ET CONTACT</p>
+<main>
+   <section id="Section-Banner">
+    <div class="Banner">
+      <p id="Service-p">SERVICES ET CONTACT</p>
       <h1>Des soins sur mesure pour votre compagnon</h1>
-      <p>Toilettage, pension et conseil : réservez un créneau ou posez-nous vos questions.</p>
-  </div>
-<section id="hero">
-  <div class="faq">
-      <p>FAQ</p>
+      <p id="Service-Slogan">Toilettage, pension et conseil : réservez un créneau ou posez-nous vos questions.</p>
+    </div>
+  </section>
+  <section id="Section-Hero">
+    <div class="faq">
+      <p id="FAQ">FAQ</p>
       <h2>Questions fréquentes</h2>
+
       <p>Vous ne trouvez pas votre réponse ? Écrivez-nous via le formulaire ci-dessous.</p>
       <a href="#Section-Contacts" class="scroll-button">Nous écrire</a>
-  </div>
-<div class="accordion-Wrapper">
-  <button class="accordion">Faut-il prendre rendez-vous pour le  toilettage?</button>
-  <div class="panel">
-    <p>Oui, le toilettage se fait uniquement sur rendez-vous, du lundi au samedi. Comptez 1 h à 2 h selon la taille de l'animal.</p>
-  </div>
-
-
-  <button class="accordion">Quels documents faut-il pour la pension ?</button>
-  <div class="panel">
-    <p>Pour toute entrée en pension, nous exigeons le carnet de santé de l’animal à jour, l'attestation des vaccins obligatoires, ainsi qu'un certificat de bonne santé récent délivré par un vétérinaire.</p>
-  </div>
-
-  <button class="accordion">Comment se passe une adoption ?</button>
-  <div class="panel">
-    <p>L'adoption se fait en toute transparence : vous remplissez un formulaire de profil, vous échangez avec notre équipe pour trouver l'animal qui correspond à votre mode de vie, vous effectuez une visite de rencontre, et enfin, vous signez un contrat d'adoption responsable.</p>
-  </div>
-
-    <button class="accordion">Livrez-vous à domicile ?</button>
-  <div class="panel">
-    <p>Oui, nous proposons la livraison à domicile sur Casablanca et ses environs. Les commandes sont généralement expédiées sous 24 à 48 heures, avec la livraison offerte à partir d'un certain montant d'achats.</p>
-  </div>
-
-    <button class="accordion">Puis-je retourner un produit ?</button>
-  <div class="panel">
-    <p>Bien sûr ! Vous disposez de 14 jours suivant votre achat pour retourner un article non ouvert, non utilisé et dans son emballage d'origine, muni de votre ticket de caisse ou de votre facture.</p>
-  </div>
-</div>
-</section>
-  <section id="#Section-Contacts">
+    </div>
+    <div class="accordion-Wrapper">
+      <details>
+        <summary>Faut-il prendre rendez-vous pour le toilettage?</summary>
+        <p>Oui, le toilettage se fait uniquement sur rendez-vous, du lundi au samedi. Comptez 1 h à 2 h selon la taille
+          de l'animal.</p>
+      </details>
+      <details>
+        <summary>Quels documents faut-il pour la pension ?</summary>
+        <p>Pour toute entrée en pension, nous exigeons le carnet de santé de l’animal à jour, l'attestation des vaccins
+          obligatoires, ainsi qu'un certificat de bonne santé récent délivré par un vétérinaire.</p>
+      </details>
+      <details>
+        <summary>Comment se passe une adoption ?</summary>
+        <p>L'adoption se fait en toute transparence : vous remplissez un formulaire de profil, vous échangez avec notre
+          équipe pour trouver l'animal qui correspond à votre mode de vie, vous effectuez une visite de rencontre, et
+          enfin, vous signez un contrat d'adoption responsable.</p>
+      </details>
+      <details>
+        <summary>Livrez-vous à domicile ?</summary>
+        <p>Oui, nous proposons la livraison à domicile sur Casablanca et ses environs. Les commandes sont généralement
+          expédiées sous 24 à 48 heures, avec la livraison offerte à partir d'un certain montant d'achats.</p>
+      </details>
+      <details>
+        <summary>Puis-je retourner un produit ?</summary>
+        <p>Bien sûr ! Vous disposez de 14 jours suivant votre achat pour retourner un article non ouvert, non utilisé et
+          dans son emballage d'origine, muni de votre ticket de caisse ou de votre facture.</p>
+      </details>
+    </div>
+    </div>
+  </section>
+  <section id="Section-Contacts">
     <div class="Contacts-Wrapper">
-      <div class="Form-Wrapper">
+      <div class="Form-Wrapper" style="grid-area: box-1;">
         <form>
           <div class="Form-Item">
             <h3>Prendre Render-Vous</h3>
@@ -90,18 +93,18 @@
             <label for="UserName">Nom complet * </label>
             <input type="text" id="UserName" placeholder="Ex. Sara benali">
           </div>
-            <div class="Form-Item">
+          <div class="Form-Item">
             <label for="email">Adresse e-mail * </label>
             <input type="email" id="email" placeholder="vous@exemple.com">
           </div>
-            </div>
+
           <div class="Form-Item">
             <label for="pet-select">Service *</label>
-             <select name="pets" id="pet-select">
-                <option value="toilettage">Toilettage</option>
-                <option value="pension">Pension</option>
-                <option value="conseil">Conseil</option>
-              </select>
+            <select name="pets" id="pet-select">
+              <option value="toilettage">Toilettage</option>
+              <option value="pension">Pension</option>
+              <option value="conseil">Conseil</option>
+            </select>
           </div>
           <div class="Form-Item">
             <label for="Date">Date souhaitée *</label>
@@ -109,43 +112,49 @@
           </div>
           <div class="Form-Item">
             <label for="Message">Message * </label>
-            <input type="text" id="Message" placeholder="Race, Taille et besoins particuliers de votre animal...">
+           <textarea id="Message" rows="4" placeholder="Race, taille et besoins particuliers de votre animal..."></textarea>
           </div>
-          <div>
+          <div class="Form-Item">
             <input id="Submitbutton" type="submit" value="Envoyer la demande">
           </div>
-        </form>
       </div>
-      <div class="Info-Wrapper">
-        <div class="Info-Item">
-          <h4>La boutique</h4>
-        </div>
-        <div class="Info-Item">
-          <span>12 Rue lilas, Casablanca</span>
-        </div>
-        <div class="Info-Item">
-          <span>05 22 00 00 00</span>
-        </div>
-        <div class="Info-Item">
-          <span>bonjour@petnest.ma</span>
-        </div>
-        <div class="Info-Item">
-          <span>Lundi-Samedi: 9h - 19h</span>
-        </div>
+      </form>
+    </div>
+    <div class="Info-Wrapper" style="grid-area: box-2;">
+      <div class="Info-Item">
+        <h4>La boutique</h4>
       </div>
-      <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2752.285007986018!2d-7.638165150234211!3d33.60215440518075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cd4778aa113b%3A0xb06c1d84f310fd3!2sCasablanca!5e1!3m2!1sen!2sma!4v1791925669336!5m2!1sen!2sma" title="Plan d'accès" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      <div class="Info-Item">
+        <span>12 Rue lilas, Casablanca</span>
       </div>
-      <div class="Icons">
-        <span>Suiver-nous</span>
-        <div>
-          <li></li><!-- Icons -->
-          <li></li><!-- Icons -->
-          <li></li><!-- Icons -->
-        </div>
+      <div class="Info-Item">
+        <span>05 22 00 00 00</span>
+      </div>
+      <div class="Info-Item">
+        <span>bonjour@petnest.ma</span>
+      </div>
+      <div class="Info-Item">
+        <span>Lundi-Samedi: 9h - 19h</span>
       </div>
     </div>
+    <div class="map" style="grid-area: box-3;">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2752.285007986018!2d-7.638165150234211!3d33.60215440518075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cd4778aa113b%3A0xb06c1d84f310fd3!2sCasablanca!5e1!3m2!1sen!2sma!4v1791925669336!5m2!1sen!2sma"
+        title="Plan d'accès" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+    <div class="Icons" style="grid-area: box-4;">
+      <span>Suiver-nous</span>
+      <div>
+        <li><i class="fa-brands fa-square-instagram"></i></li><!-- Icons -->
+        <li><i class="fa-brands fa-youtube"></i></li><!-- Icons -->
+        <li><i class="fa-solid fa-share-nodes"></i></li><!-- Icons -->
+      </div>
+    </div>
+    </div>
   </section>
+</main>
+  
 <footer class="pied-de-page">
       <div class="conteneur">
         <div class="pied-grille">
