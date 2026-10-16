@@ -61,7 +61,7 @@ body {
     flex-direction: column;
     position: fixed;
     width: 100%;
-    top: 5%;
+    top: 3%;
     right: 0;
     width: 100%;
     background-color: white;
@@ -234,7 +234,7 @@ section
 .imgs
 {
  
-  display: flex;
+   display: flex;
   
 }
 .imgs img
@@ -579,57 +579,6 @@ section .form div .btn-orange
   margin: auto;
   border-radius: 6px;
 }
-.Section-Info{
-    background-color: #fff4ed;
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 12px;
-}
-.conteneur h1{
-  font-size: 32px;
-  font-weight: bold;
-}
-.conteneur p{
-  color: #57534E;
-  margin-bottom: 16px;
-}
-.Button-Info{
-  display: grid;
-  grid-template-columns: 1fr;
-  gap:8px;
-}
-   .Button-Info .btn-orange{
-  text-align: center;
-  width: 100%;
-  padding: 10px;
-  border-radius: 5px;
-  
-} 
-.btn-Adopter{
-  display: flex;
-  justify-content: center;
-  border: 2px solid #C2410C;
-  background-color: white;
-  border-radius: 6px;
-  color: #C2410C;
-  padding: 6px;
-}
-.Img-Info{
-  display: block;
-  margin: auto;
-  border-radius: 6px; 
-}
-
-.active, .accordion:hover {
-  background-color: #ccc;
-}
-
-.panel {
-  padding: 0 18px;
-  background-color: white;
-  display: none;
-  overflow: hidden;
-}
 
 
 
@@ -727,6 +676,7 @@ section .form div .btn-orange
   }
    .Section-Info{
     grid-template-columns: 1fr 1fr ;
+    background-color: red;
     
   }
   .Img-Info{
@@ -739,43 +689,6 @@ section .form div .btn-orange
 }
 
 
-
-
-
-
-@media (max-width: 992px) {
-  .pied-grille {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
-  }
-  
-
-}
-
-
-.active, .accordion:hover {
-  background-color: #ccc;
-}
-
-.panel {
-  padding: 0 18px;
-  background-color: white;
-  display: none;
-  overflow: hidden;
-}
-
-
-
-
-/* tablette */
-@media (max-width: 992px) {
-  .pied-grille {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
-  }
-  
-
-}
 
 
 
@@ -842,3 +755,392 @@ section .form div .btn-orange
  
 }
 
+
+.Section-Banner {
+  background-color: #F0FDFA;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 25px;
+  padding: 30px 16px;
+}
+.Banner-title{
+  max-width: 100%;
+}
+.Banner-title h2 {
+  font-size: 24px;
+  margin-bottom: 12px;
+  line-height: 1.4;
+  font-weight: bold;
+}
+.Banner-title p {
+  color: #57534E;
+  line-height: 1.5;
+ 
+}
+
+.Cartes{
+  display: flex;
+  gap: 40px;
+}
+
+.Cartes h3 {
+  color: #0F766E;
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Cartes p {
+  color: #57534E;
+  font-size: 12px;
+  overflow-wrap: break-word;
+  text-align: center;
+}
+
+.Cart {
+  background-color: #FFFF;
+  border: 1px FFFFFF ;
+  border-radius: 8px;
+  min-width: 0;
+  padding: 12px 5px;
+ 
+}
+
+.Hero-image {
+  display: flex;
+  width: 100%;
+  border-radius: 10px;
+  
+}
+
+.Section-Hero {
+  background-color: #FFF4ED;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 15px;
+
+}
+
+.Section-Hero div {
+  width: 100%;
+}
+
+
+
+.Hero-animal-info h3 {
+font-weight: bold;
+font-size: 20px;
+margin-bottom: 10px;
+
+}
+
+.Hero-animal-info h4 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.Hero-animal-info p {
+  color: #57534E;
+  margin-bottom: 20px;
+}
+
+.button {
+  background-color: #EA580C;
+  border: 1px solid #EA580C;
+  color: white;
+  border-radius: 8px;
+  padding: 5px;
+  width: 150px;
+}
+.button:active {
+  scale: 0.8;
+}
+
+
+
+.section-contacts {
+  display: flex;
+  width: 50%; 
+  margin-left: 200px;
+  margin: 40px;
+  gap: 35px;
+}
+.section-contact-title {
+  margin-right: 50%;
+  width: 350px;
+
+
+}
+
+.section-contact-title h4 {
+  font-weight: bold;
+  color: #B45309;
+}
+
+.section-contact-title h2{
+font-weight: bold;
+font-size: 20px;
+ width: 350px;
+}
+
+
+.form-Contacts {
+background-color: #F5F5F4;
+border-radius: 8px;
+border-collapse: separate;
+border-spacing: 20px 15px;
+ width: 500px;
+}
+
+.form-Contacts  table td {
+     /* border: 3px solid black; */
+     padding: 3%;
+}
+
+.form-Contacts table {
+    border-collapse: separate;
+    border-spacing: 20px 15px;
+    width: 100%;
+}
+
+
+.form-Contacts input {
+border: 1px solid #A8A29E ;
+border-radius: 5px;
+padding: 10px;
+ 
+}
+
+#animal {
+border: 1px solid #A8A29E ;
+border-radius: 5px;
+padding: 10px;
+width: 100%;
+}
+
+#logement {
+border: 1px solid #A8A29E ;
+border-radius: 5px;
+padding: 10px;
+width: 100%;
+}
+
+
+.section-contacts {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 30px 16px;
+    gap: 20px;
+}
+
+.section-contact-title {
+    width: 100%;
+    margin: 0;
+}
+
+.section-contact-title h2 {
+    font-size: 24px;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.section-contact-title p {
+    line-height: 1.7;
+}
+
+.from-section-contacts {
+    width: 100%;
+    min-width: 0;
+}
+
+.form-Contacts {
+    background-color: #F5F5F4;
+    border-radius: 8px;
+    width: 100%;
+    padding: 10px;
+}
+
+.form-Contacts table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 8px;
+    table-layout: fixed;
+}
+
+.form-Contacts td {
+    padding: 4px;
+    vertical-align: top;
+}
+
+.form-Contacts input:not([type="checkbox"]),
+.form-Contacts select,
+.form-Contacts textarea {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    padding: 10px;
+    border: 1px solid #A8A29E;
+    border-radius: 5px;
+    font: inherit;
+    resize: vertical;
+}
+
+.form-Contacts input:focus,
+.form-Contacts textarea:focus {
+    background-color: #FFF4ED;
+    outline: none;
+    border: 2px solid #EA580C;
+}
+.form-Contacts select:focus {
+    background-color: #FFF4ED;
+    border: 2px solid #EA580C;
+    outline: none;
+}
+
+.form-Contacts input[type="checkbox"] {
+    max-width: 100%;
+    
+}
+
+input[type=checkbox] {
+  accent-color: #EA580C;
+}
+
+
+.form-Contacts .button {
+    margin-top: 15px;
+}
+
+
+/* Tablette */
+@media (min-width: 768px) {
+
+    .Section-Banner {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 45px 30px;
+        gap: 25px;
+    }
+
+    .Banner-title {
+        max-width: 50%;
+    }
+
+    .Cartes {
+        gap: 12px;
+    }
+
+    .Section-Hero {
+        flex-direction: row;
+        align-items: center;
+        padding: 45px 30px;
+    }
+
+    .Section-Hero > div {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .Hero-image {
+      display: block;
+      width: 100%;
+      max-width: none;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 10px;
+     
+    }
+
+    .section-contacts {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 45px 30px;
+        gap: 30px;
+    }
+
+    .section-contact-title {
+        flex: 1;
+    }
+
+    .from-section-contacts {
+        flex: 1.5;
+    }
+
+    
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+
+    .Section-Banner {
+        padding: 60px max(40px, calc((100% - 1200px) / 2));
+        gap: 40px;
+    }
+
+    .Cartes {
+        gap: 25px;
+    }
+
+    .Section-Hero {
+        padding: 60px ;
+        gap: 40px;
+    }
+
+    .Hero-image {
+        max-width: 400px;
+    }
+
+    .section-contacts {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 60px 24px;
+        gap: 50px;
+    }
+
+    .pied-grille {
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
+
+    .pied-bas {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+   
+    .Hero-animal-info{
+      
+      display: block;
+     
+      
+     }
+     .Hero-animal-info div
+     {
+      margin-top: 2%;
+     }
+      .Hero-animal-info .button
+      {
+         padding: 10px;
+      }
+
+}
+
+@media (max-width: 600px) {
+  .form-Contacts table,
+  .form-Contacts tbody,
+  .form-Contacts tr,
+  .form-Contacts td {
+      display: block;
+      width: 100%;
+    }
+}
+
+html {
+  scroll-behavior: smooth;
+}
